@@ -1,0 +1,37 @@
+---
+- hosts: localhost
+  gather_facts: no
+  connection: local
+
+  vars:
+    playbook_name: Test
+    host_name: '{{ansible_distribution}}'
+  tasks:
+    - name: ->'{{playbook_name}}' | '{{host_name}}' | 1.0 Register the output of the 'uptime' command.
+      command: uptime
+      register: system_uptime
+
+    - name: ->'{{playbook_name}}' | '{{host_name}}' | 2.0 Print the registered output of the 'uptime' command.
+      debug:
+        var: system_uptime.stdout
+    
+    - name: ->'{{playbook_name}}' | '{{host_name}}' | 3.0 Print a message if a command resulted in a change.
+      debug:
+        msg: "Comand result in a change!"
+      when: system_uptime is changed
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

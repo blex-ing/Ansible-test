@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  gather_facts: yes
+  connection: local
+
+  vars:
+    playbook_name: 'Test yamllint'
+    host_name: '{{ansible_distribution}}'
+  tasks:
+    - name: "'{{playbook_name}}' | '{{host_name}}' | 1.0 Register the output of the 'uptime' command."
+      command: uptime
+      register: system_uptime
+
+    - name: "'{{playbook_name}}' | '{{host_name}}' | 2.0 Print the registered output of the 'uptime' command."
+      debug:
+        var: system_uptime.stdout

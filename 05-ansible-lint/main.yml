@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: Get system uptime to demo how this works
+      command: uptime
+      changed_when: false
+      register: system_uptime
+
+    - name: print the registered output of the 'uptime' command
+      debug:
+        var: system_uptime.stdout

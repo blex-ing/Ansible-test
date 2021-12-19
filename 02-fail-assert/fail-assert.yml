@@ -1,0 +1,56 @@
+---
+- hosts: localhost
+  gather_facts: True
+  connection: local
+
+
+  vars:
+    playbook_name: Test
+    host_name: '{{ansible_distribution}}'
+    should_fail_via_fail: false
+    should_fail_via_assert: false
+    should_fail_via_complex_assert: false
+  
+  tasks:
+
+    - name: ->'{{playbook_name}}' | '{{host_name}}' | 1.0 Fail if conditios warrant a failure.
+      fail:
+        msg: "There was an epic failure"
+      when: should_fail_via_fail
+
+    - name: ->'{{playbook_name}}' | '{{host_name}}' | 2.0 Stop playbook if an assertion isn't validated.
+      assert:
+        that: "should_fail_via_assert != true" 
+
+    - name: ->'{{playbook_name}}' | '{{host_name}}' | 3.0 Assertion can have contain conditions.
+      assert:
+        that:
+          - should_fail_via_fail != true
+          - should_fail_via_assert != true
+          - should_fail_via_complex_assert != true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
