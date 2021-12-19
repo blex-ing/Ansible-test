@@ -1,0 +1,21 @@
+Running sanity test 'action-plugin-docs' with Python 3.8
+Running sanity test 'ansible-doc' with Python 3.8
+Running sanity test 'changelog' with Python 3.8
+Running sanity test 'compile' with Python 3.8
+Running sanity test 'empty-init' with Python 3.8
+Running sanity test 'future-import-boilerplate' with Python 3.8
+Running sanity test 'ignores'
+Running sanity test 'import' with Python 3.8
+Running sanity test 'line-endings' with Python 3.8
+Running sanity test 'metaclass-boilerplate' with Python 3.8
+Running sanity test 'no-assert' with Python 3.8
+Running sanity test 'no-basestring' with Python 3.8
+Running sanity test 'no-dict-iteritems' with Python 3.8
+Running sanity test 'no-dict-iterkeys' with Python 3.8
+Running sanity test 'no-dict-itervalues' with Python 3.8
+Running sanity test 'no-get-exception' with Python 3.8
+Running sanity test 'no-illegal-filenames' with Python 3.8
+Running sanity test 'no-main-display' with Python 3.8
+Running sanity test 'no-smart-quotes' with Python 3.8
+Running sanity test 'no-unicode-literals' with Python 3.8
+Running sanity test 'pep8' with Python 3.8
