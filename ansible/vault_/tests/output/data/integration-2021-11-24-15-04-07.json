@@ -1,0 +1,70 @@
+{
+    "targets": {
+        "utils_get_path": {
+            "aliases": [
+                "non_destructive/", 
+                "non_destructive/utils_get_path", 
+                "non_module/", 
+                "non_module/utils_get_path", 
+                "posix/", 
+                "role/", 
+                "role/utils_get_path", 
+                "utils_get_path"
+            ], 
+            "coverage": false, 
+            "coverage_label": "", 
+            "modules": [], 
+            "name": "utils_get_path", 
+            "python_version": "3.8", 
+            "run_time_seconds": 22, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }, 
+        "utils_netaddr_test": {
+            "aliases": [
+                "non_destructive/", 
+                "non_destructive/utils_netaddr_test", 
+                "non_module/", 
+                "non_module/utils_netaddr_test", 
+                "posix/", 
+                "role/", 
+                "role/utils_netaddr_test", 
+                "utils_netaddr_test"
+            ], 
+            "coverage": false, 
+            "coverage_label": "", 
+            "modules": [], 
+            "name": "utils_netaddr_test", 
+            "python_version": "3.8", 
+            "run_time_seconds": 40, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }, 
+        "utils_to_paths": {
+            "aliases": [
+                "non_destructive/", 
+                "non_destructive/utils_to_paths", 
+                "non_module/", 
+                "non_module/utils_to_paths", 
+                "posix/", 
+                "role/", 
+                "role/utils_to_paths", 
+                "utils_to_paths"
+            ], 
+            "coverage": false, 
+            "coverage_label": "", 
+            "modules": [], 
+            "name": "utils_to_paths", 
+            "python_version": "3.8", 
+            "run_time_seconds": 12, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

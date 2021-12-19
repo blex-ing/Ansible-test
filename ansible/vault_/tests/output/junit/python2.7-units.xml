@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="20" hostname="0f70a184f0c9" name="pytest" skipped="0" tests="222" time="76.301" timestamp="2021-11-24T17:53:22.042294"><testcase classname="module_utils.test_argspec_validate.TestSortList" file="module_utils/test_argspec_validate.py" line="80" name="test_not_doc" time="0.012"></testcase><testcase classname="module_utils.test_argspec_validate.TestSortList" file="module_utils/test_argspec_validate.py" line="148" name="test_invalid_spec" time="0.019"></testcase><testcase classname="module_utils.test_argspec_validate.TestSortList" file="module_utils/test_argspec_validate.py" line="133" name="test_other_args" time="0.008"></testcase><testcase classname="module_utils.test_argspec_validate.TestSortList" file="module_utils/test_argspec_validate.py" line="94" name="test_schema_conditional" time="0.020"></testcase><testcase classname="module_utils.test_argspec_validate.TestSortList" file="module_utils/test_argspec_validate.py" line="33" name="test_simple_defaults" time="0.008"></testcase><testcase classname="module_utils.test_argspec_validate.TestSortList" file="module_utils/test_argspec_validate.py" line="55" name="test_simple_fail" time="0.008"></testcase><testcase classname="module_utils.test_argspec_validate.TestSortList" file="module_utils/test_argspec_validate.py" line="68" name="test_simple_fail_no_name" time="0.009"></testcase><testcase classname="module_utils.test_argspec_validate.TestSortList" file="module_utils/test_argspec_validate.py" line="18" name="test_simple_pass" time="0.010"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="98" name="test_dict_of_dict_merged" time="0.005"></testcase><testcase classname="module_utils.test_argspec_validate.TestSortList" file="module_utils/test_argspec_validate.py" line="111" name="test_unsupported_param" time="0.016"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="126" name="test_dict_of_dict_replaced_other_missing" time="0.005"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="105" name="test_dict_of_dict_replaced" time="0.008"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="119" name="test_dict_of_dict_replaced_other_string" time="0.006"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="83" name="test_list_other_dict" time="0.005"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="112" name="test_dict_of_dict_replaced_other_none" time="0.005"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="91" name="test_list_other_string" time="0.010"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="68" name="test_list_missing_from_other" time="0.007"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="54" name="test_list_value_same" time="0.007"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="75" name="test_list_other_none" time="0.008"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="25" name="test_not_dict_other" time="0.006"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="61" name="test_list_value_combine" time="0.007"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="140" name="test_not_list_or_dict_same" time="0.005"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="17" name="test_not_dict_base" time="0.011"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="47" name="test_simple_other_is_none" time="0.005"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="133" name="test_not_list_or_dict_different" time="0.008"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="33" name="test_simple" time="0.006"></testcase><testcase classname="module_utils.test_dict_merge.TestDict_merge" file="module_utils/test_dict_merge.py" line="40" name="test_simple_other_is_string" time="0.006"></testcase><testcase classname="module_utils.test_get_path.TestGetPath" file="module_utils/test_get_path.py" line="23" name="test_get_path_pass" time="0.014"></testcase><testcase classname="module_utils.test_index_of.TestIndexOfFilter" file="module_utils/test_index_of.py" line="38" name="test_fail_key_not_valid" time="0.007"></testcase><testcase classname="module_utils.test_get_path.TestGetPath" file="module_utils/test_get_path.py" line="41" name="test_get_path_fail" time="0.110"></testcase><testcase classname="module_utils.test_get_path.TestGetPath" file="module_utils/test_get_path.py" line="32" name="test_get_path_pass_wantlist" time="0.011"></testcase><testcase classname="module_utils.test_index_of.TestIndexOfFilter" file="module_utils/test_index_of.py" line="32" name="test_fail_mixed_list" time="0.007"></testcase><testcase classname="module_utils.test_index_of.TestIndexOfFilter" file="module_utils/test_index_of.py" line="44" name="test_fail_on_missing" time="0.270"></testcase><testcase classname="module_utils.test_index_of.TestIndexOfFilter" file="module_utils/test_index_of.py" line="22" name="test_fail_no_qualfier" time="0.333"></testcase><testcase classname="module_utils.test_index_of.TestIndexOfFilter" file="module_utils/test_index_of.py" line="89" name="test_simple_dict" time="0.022"></testcase><testcase classname="module_utils.test_index_of.TestIndexOfFilter" file="module_utils/test_index_of.py" line="52" name="test_just_test" time="0.021"></testcase><testcase classname="module_utils.test_sort_list.TestSortList" file="module_utils/test_sort_list.py" line="23" name="test_mot_list" time="0.004"></testcase><testcase classname="module_utils.test_sort_list.TestSortList" file="module_utils/test_sort_list.py" line="35" name="test_pass" time="0.006"></testcase><testcase classname="module_utils.test_index_of.TestIndexOfFilter" file="module_utils/test_index_of.py" line="71" name="test_simple_lists" time="0.025"></testcase><testcase classname="module_utils.test_sort_list.TestSortList" file="module_utils/test_sort_list.py" line="28" name="test_not_same" time="0.004"></testcase><testcase classname="module_utils.test_sort_list.TestSortList" file="module_utils/test_sort_list.py" line="17" name="test_simple" time="0.005"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="28" name="test_to_paths" time="0.011"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="80" name="test_to_paths_empty_mapping" time="0.009"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="86" name="test_to_paths_list_of_empty_mapping" time="0.010"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="98" name="test_to_paths_only_empty_mapping" time="0.007"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="40" name="test_to_paths_special_char" time="0.010"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="80" name="test_fn_ail_json" time="0.012"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="103" name="test_fn_check_argspec_fail_no_test_or_command" time="0.019"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="402" name="test_fn_run_pass_w_fact" time="0.059"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="431" name="test_fn_run_pass_wo_fact" time="0.029"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="217" name="test_fn_set_parser_command_absent" time="0.012"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="192" name="test_fn_set_parser_command_missing" time="0.013"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="205" name="test_fn_set_parser_command_present" time="0.015"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="233" name="test_fn_set_text_absent" time="0.014"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="224" name="test_fn_set_text_present" time="0.009"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="285" name="test_fn_update_template_path_mock_find_needle" time="0.019"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="255" name="test_fn_update_template_path_not_exist" time="0.020"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="270" name="test_fn_update_template_path_not_exist_os" time="0.021"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="43" name="test_argspec_no_updates" time="0.017"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="146" name="test_diff_dict" time="0.119"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="132" name="test_diff_dict_skip_lines" time="0.034"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="110" name="test_diff_list" time="0.029"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="96" name="test_diff_list_skip_lines" time="0.033"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="202" name="test_fail_plugin" time="0.018"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="164" name="test_invalid_diff_engine_not_collection" time="0.018"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="178" name="test_invalid_diff_engine_not_valid" time="0.018"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="189" name="test_invalid_regex" time="0.035"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="50" name="test_same" time="0.032"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="122" name="test_same_dict" time="0.036"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="86" name="test_same_list" time="0.032"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="60" name="test_string" time="0.031"></testcase><testcase classname="plugins.action.test_fact_diff.TestUpdate_Fact" file="plugins/action/test_fact_diff.py" line="72" name="test_string_skip_lines" time="0.035"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="98" name="test_argspec_no_updates" time="0.023"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="107" name="test_argspec_none" time="0.018"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="128" name="test_fields" time="0.016"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="122" name="test_invalid_jinja" time="0.019"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="134" name="test_missing_var" time="0.025"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="311" name="test_not_mutable_sequence_or_mapping" time="0.017"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="180" name="test_run_append_to_list" time="0.029"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="202" name="test_run_bracket_double_quote" time="0.031"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="190" name="test_run_bracket_single_quote" time="0.023"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="224" name="test_run_int_as_string" time="0.034"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="214" name="test_run_int_dict_keys" time="0.029"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="252" name="test_run_invalid_key_start_with_dot" time="0.214"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="243" name="test_run_invalid_path_bracket_after_dot" time="0.020"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="236" name="test_run_invalid_path_quote_after_dot" time="0.024"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="289" name="test_run_list_not_int" time="0.029"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="301" name="test_run_list_not_long" time="0.045"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="361" name="test_run_looks_like_a_bool" time="0.031"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="281" name="test_run_missing_key" time="0.022"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="153" name="test_run_multiple" time="0.027"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="269" name="test_run_no_update_dict" time="0.020"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="259" name="test_run_no_update_list" time="0.029"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="342" name="test_run_not_dotted_fail_missing" time="0.027"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="322" name="test_run_not_dotted_success_one" time="0.026"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="352" name="test_run_not_dotted_success_same" time="0.025"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="332" name="test_run_not_dotted_success_three" time="0.031"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="170" name="test_run_replace_in_list" time="0.047"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="143" name="test_run_simple" time="0.019"></testcase><testcase classname="plugins.action.test_update_fact.TestUpdate_Fact" file="plugins/action/test_update_fact.py" line="116" name="test_valid_jinja" time="0.029"></testcase><testcase classname="plugins.action.test_validate.TestValidate" file="plugins/action/test_validate.py" line="140" name="test_invalid_argspec" time="0.163"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_invalid_argspec&gt;
+
+    def test_invalid_argspec(self):
+        &quot;&quot;&quot;Check passing invalid argspec&quot;&quot;&quot;
+    
+        # missing required arguments
+        self._plugin._task.args = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        result = self._plugin.run(task_vars=None)
+        msg = &quot;missing required arguments:&quot;
+        if isinstance(result[&quot;errors&quot;], list):
+            self.assertIn(msg, result[&quot;errors&quot;][0])
+        else:
+            self.assertIn(msg, result[&quot;errors&quot;])
+    
+        # invalid engine option value
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.sample&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_OPER_STATUS_UP_CHECK,
+        }
+        result = self._plugin.run(task_vars=None)
+        self.assertIn(
+            &quot;For engine &apos;ansible.utils.sample&apos; error loading the corresponding validate plugin&quot;,
+            result[&quot;msg&quot;],
+        )
+    
+        # invalid data option value
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: &quot;invalid data&quot;,
+            &quot;criteria&quot;: CRITERIA_OPER_STATUS_UP_CHECK,
+        }
+    
+        with self.assertRaises(AnsibleActionFail) as error:
+&gt;           self._plugin.run(task_vars=None)
+E           AssertionError: AnsibleActionFail not raised
+
+tests/unit/plugins/action/test_validate.py:173: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_invalid_argspec&gt;
+
+    def test_invalid_argspec(self):
+        &quot;&quot;&quot;Check passing invalid argspec&quot;&quot;&quot;
+    
+        # missing required arguments
+        self._plugin._task.args = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        result = self._plugin.run(task_vars=None)
+        msg = &quot;missing required arguments:&quot;
+        if isinstance(result[&quot;errors&quot;], list):
+            self.assertIn(msg, result[&quot;errors&quot;][0])
+        else:
+            self.assertIn(msg, result[&quot;errors&quot;])
+    
+        # invalid engine option value
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.sample&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_OPER_STATUS_UP_CHECK,
+        }
+        result = self._plugin.run(task_vars=None)
+        self.assertIn(
+            &quot;For engine &apos;ansible.utils.sample&apos; error loading the corresponding validate plugin&quot;,
+            result[&quot;msg&quot;],
+        )
+    
+        # invalid data option value
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: &quot;invalid data&quot;,
+            &quot;criteria&quot;: CRITERIA_OPER_STATUS_UP_CHECK,
+        }
+    
+        with self.assertRaises(AnsibleActionFail) as error:
+&gt;           self._plugin.run(task_vars=None)
+E           AssertionError: AnsibleActionFail not raised
+
+tests/unit/plugins/action/test_validate.py:173: AssertionError</failure></testcase><testcase classname="plugins.action.test_validate.TestValidate" file="plugins/action/test_validate.py" line="247" name="test_invalid_data" time="0.021"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_invalid_data&gt;
+
+    def test_invalid_data(self):
+        &quot;&quot;&quot;Check passing invalid data as per criteria&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: [
+                CRITERIA_CRC_ERROR_CHECK,
+                CRITERIA_ENABLED_CHECK,
+                CRITERIA_OPER_STATUS_UP_CHECK,
+            ],
+        }
+    
+        result = self._plugin.run(task_vars=None)
+        self.assertIn(
+            &quot;patternProperties.^.*.properties.counters.properties.in_crc_errors.maximum&quot;,
+&gt;           result[&quot;msg&quot;],
+        )
+E       AssertionError: &apos;patternProperties.^.*.properties.counters.properties.in_crc_errors.maximum&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:264: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_invalid_data&gt;
+
+    def test_invalid_data(self):
+        &quot;&quot;&quot;Check passing invalid data as per criteria&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: [
+                CRITERIA_CRC_ERROR_CHECK,
+                CRITERIA_ENABLED_CHECK,
+                CRITERIA_OPER_STATUS_UP_CHECK,
+            ],
+        }
+    
+        result = self._plugin.run(task_vars=None)
+        self.assertIn(
+            &quot;patternProperties.^.*.properties.counters.properties.in_crc_errors.maximum&quot;,
+&gt;           result[&quot;msg&quot;],
+        )
+E       AssertionError: &apos;patternProperties.^.*.properties.counters.properties.in_crc_errors.maximum&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:264: AssertionError</failure></testcase><testcase classname="plugins.action.test_validate.TestValidate" file="plugins/action/test_validate.py" line="188" name="test_invalid_validate_plugin_config_options" time="0.029"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_invalid_validate_plugin_config_options&gt;
+
+    def test_invalid_validate_plugin_config_options(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(
+            task_vars={&quot;ansible_validate_jsonschema_draft&quot;: &quot;draft0&quot;}
+        )
+        self.assertIn(
+            &quot;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&quot;,
+&gt;           result[&quot;msg&quot;],
+        )
+E       AssertionError: &apos;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:203: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_invalid_validate_plugin_config_options&gt;
+
+    def test_invalid_validate_plugin_config_options(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(
+            task_vars={&quot;ansible_validate_jsonschema_draft&quot;: &quot;draft0&quot;}
+        )
+        self.assertIn(
+            &quot;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&quot;,
+&gt;           result[&quot;msg&quot;],
+        )
+E       AssertionError: &apos;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:203: AssertionError</failure></testcase><testcase classname="plugins.action.test_validate.TestValidate" file="plugins/action/test_validate.py" line="285" name="test_support_for_format" time="0.031"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_support_for_format&gt;
+
+    def test_support_for_format(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: VALID_DATA,
+            &quot;criteria&quot;: CRITERIA_FORMAT_SUPPORT_CHECK,
+        }
+    
+        result = self._plugin.run(task_vars=None)
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:296: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_support_for_format&gt;
+
+    def test_support_for_format(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: VALID_DATA,
+            &quot;criteria&quot;: CRITERIA_FORMAT_SUPPORT_CHECK,
+        }
+    
+        result = self._plugin.run(task_vars=None)
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:296: AssertionError</failure></testcase><testcase classname="plugins.action.test_validate.TestValidate" file="plugins/action/test_validate.py" line="297" name="test_support_for_format_with_invalid_data" time="0.024"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_support_for_format_with_invalid_data&gt;
+
+    def test_support_for_format_with_invalid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: IN_VALID_DATA,
+            &quot;criteria&quot;: CRITERIA_FORMAT_SUPPORT_CHECK,
+        }
+    
+        result = self._plugin.run(task_vars=None)
+&gt;       self.assertIn(&quot;Validation errors were found&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;Validation errors were found&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:308: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_support_for_format_with_invalid_data&gt;
+
+    def test_support_for_format_with_invalid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: IN_VALID_DATA,
+            &quot;criteria&quot;: CRITERIA_FORMAT_SUPPORT_CHECK,
+        }
+    
+        result = self._plugin.run(task_vars=None)
+&gt;       self.assertIn(&quot;Validation errors were found&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;Validation errors were found&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:308: AssertionError</failure></testcase><testcase classname="plugins.action.test_validate.TestValidate" file="plugins/action/test_validate.py" line="273" name="test_valid_data" time="0.018"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(task_vars=None)
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:284: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(task_vars=None)
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:284: AssertionError</failure></testcase><testcase classname="plugins.action.test_validate.TestValidate" file="plugins/action/test_validate.py" line="205" name="test_validate_plugin_config_options_with_draft3" time="0.026"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_validate_plugin_config_options_with_draft3&gt;
+
+    def test_validate_plugin_config_options_with_draft3(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(
+            task_vars={&quot;ansible_validate_jsonschema_draft&quot;: &quot;draft3&quot;}
+        )
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:218: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_validate_plugin_config_options_with_draft3&gt;
+
+    def test_validate_plugin_config_options_with_draft3(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(
+            task_vars={&quot;ansible_validate_jsonschema_draft&quot;: &quot;draft3&quot;}
+        )
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:218: AssertionError</failure></testcase><testcase classname="plugins.action.test_validate.TestValidate" file="plugins/action/test_validate.py" line="219" name="test_validate_plugin_config_options_with_draft4" time="0.028"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_validate_plugin_config_options_with_draft4&gt;
+
+    def test_validate_plugin_config_options_with_draft4(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(
+            task_vars={&quot;ansible_validate_jsonschema_draft&quot;: &quot;draft4&quot;}
+        )
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:232: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_validate_plugin_config_options_with_draft4&gt;
+
+    def test_validate_plugin_config_options_with_draft4(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(
+            task_vars={&quot;ansible_validate_jsonschema_draft&quot;: &quot;draft4&quot;}
+        )
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:232: AssertionError</failure></testcase><testcase classname="plugins.action.test_validate.TestValidate" file="plugins/action/test_validate.py" line="233" name="test_validate_plugin_config_options_with_draft6" time="0.024"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_validate_plugin_config_options_with_draft6&gt;
+
+    def test_validate_plugin_config_options_with_draft6(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(
+            task_vars={&quot;ansible_validate_jsonschema_draft&quot;: &quot;draft6&quot;}
+        )
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:246: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.action.test_validate.TestValidate testMethod=test_validate_plugin_config_options_with_draft6&gt;
+
+    def test_validate_plugin_config_options_with_draft6(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        self._plugin._task.args = {
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;data&quot;: DATA,
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+        }
+    
+        result = self._plugin.run(
+            task_vars={&quot;ansible_validate_jsonschema_draft&quot;: &quot;draft6&quot;}
+        )
+&gt;       self.assertIn(&quot;all checks passed&quot;, result[&quot;msg&quot;])
+E       AssertionError: &apos;all checks passed&apos; not found in &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/action/test_validate.py:246: AssertionError</failure></testcase><testcase classname="plugins.filter.test_from_xml.TestFromXml" file="plugins/filter/test_from_xml.py" line="49" name="test_args" time="0.013"></testcase><testcase classname="plugins.filter.test_from_xml.TestFromXml" file="plugins/filter/test_from_xml.py" line="29" name="test_invalid_data" time="0.013"></testcase><testcase classname="plugins.filter.test_from_xml.TestFromXml" file="plugins/filter/test_from_xml.py" line="59" name="test_invalid_engine" time="0.008"></testcase><testcase classname="plugins.filter.test_from_xml.TestFromXml" file="plugins/filter/test_from_xml.py" line="42" name="test_valid_data" time="0.010"></testcase><testcase classname="plugins.filter.test_param_list_compare.TestParam_list_compare_merge" file="plugins/filter/test_param_list_compare.py" line="49" name="test_invalid_args_length_data" time="0.009"></testcase><testcase classname="plugins.filter.test_param_list_compare.TestParam_list_compare_merge" file="plugins/filter/test_param_list_compare.py" line="62" name="test_invalid_base_type_data" time="0.009"></testcase><testcase classname="plugins.filter.test_param_list_compare.TestParam_list_compare_merge" file="plugins/filter/test_param_list_compare.py" line="73" name="test_invalid_other_type_data" time="0.009"></testcase><testcase classname="plugins.filter.test_param_list_compare.TestParam_list_compare_merge" file="plugins/filter/test_param_list_compare.py" line="84" name="test_invalid_unsupported_bang" time="0.020"></testcase><testcase classname="plugins.filter.test_param_list_compare.TestParam_list_compare_merge" file="plugins/filter/test_param_list_compare.py" line="18" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.filter.test_param_list_compare.TestParam_list_compare_merge" file="plugins/filter/test_param_list_compare.py" line="28" name="test_valid_data_same_contents" time="0.010"></testcase><testcase classname="plugins.filter.test_param_list_compare.TestParam_list_compare_merge" file="plugins/filter/test_param_list_compare.py" line="38" name="test_valid_data_with_not_bang" time="0.006"></testcase><testcase classname="plugins.filter.test_to_xml.TestToXml" file="plugins/filter/test_to_xml.py" line="49" name="test_args" time="0.009"></testcase><testcase classname="plugins.filter.test_to_xml.TestToXml" file="plugins/filter/test_to_xml.py" line="30" name="test_invalid_data" time="0.015"></testcase><testcase classname="plugins.filter.test_to_xml.TestToXml" file="plugins/filter/test_to_xml.py" line="59" name="test_invalid_engine" time="0.010"></testcase><testcase classname="plugins.filter.test_to_xml.TestToXml" file="plugins/filter/test_to_xml.py" line="42" name="test_valid_data" time="0.016"></testcase><testcase classname="plugins.filter.test_usable_range.TestUsableRange" file="plugins/filter/test_usable_range.py" line="89" name="test_invalid_data" time="0.019"></testcase><testcase classname="plugins.filter.test_usable_range.TestUsableRange" file="plugins/filter/test_usable_range.py" line="77" name="test_missing_data" time="0.011"></testcase><testcase classname="plugins.filter.test_usable_range.TestUsableRange" file="plugins/filter/test_usable_range.py" line="107" name="test_valid_data" time="0.015"></testcase><testcase classname="plugins.filter.test_validate.TestValidate" file="plugins/filter/test_validate.py" line="105" name="test_invalid_argspec" time="0.020"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.filter.test_validate.TestValidate testMethod=test_invalid_argspec&gt;
+
+    def test_invalid_argspec(self):
+        &quot;&quot;&quot;Check passing invalid argspec&quot;&quot;&quot;
+    
+        # missing required arguments
+        args = [DATA]
+        kwargs = {}
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;Missing either &apos;data&apos; or &apos;criteria&apos; value in filter input, refer &apos;ansible.utils.validate&apos; filter&quot;,
+            str(error.exception),
+        )
+    
+        # missing required arguments
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate([DATA])
+        self.assertIn(
+            &quot;Missing either &apos;data&apos; or &apos;criteria&apos; value&quot;, str(error.exception)
+        )
+    
+        args = [DATA, [CRITERIA_IN_RATE_CHECK]]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.sample&quot;}
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;For engine &apos;ansible.utils.sample&apos; error loading&quot;,
+            str(error.exception),
+        )
+    
+        args = [&quot;invalid data&quot;, [CRITERIA_IN_RATE_CHECK]]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate(*args, **kwargs)
+&gt;       self.assertIn(&quot;&apos;data&apos; option value is invalid&quot;, str(error.exception))
+E       AssertionError: &quot;&apos;data&apos; option value is invalid&quot; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/filter/test_validate.py:139: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.filter.test_validate.TestValidate testMethod=test_invalid_argspec&gt;
+
+    def test_invalid_argspec(self):
+        &quot;&quot;&quot;Check passing invalid argspec&quot;&quot;&quot;
+    
+        # missing required arguments
+        args = [DATA]
+        kwargs = {}
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;Missing either &apos;data&apos; or &apos;criteria&apos; value in filter input, refer &apos;ansible.utils.validate&apos; filter&quot;,
+            str(error.exception),
+        )
+    
+        # missing required arguments
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate([DATA])
+        self.assertIn(
+            &quot;Missing either &apos;data&apos; or &apos;criteria&apos; value&quot;, str(error.exception)
+        )
+    
+        args = [DATA, [CRITERIA_IN_RATE_CHECK]]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.sample&quot;}
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;For engine &apos;ansible.utils.sample&apos; error loading&quot;,
+            str(error.exception),
+        )
+    
+        args = [&quot;invalid data&quot;, [CRITERIA_IN_RATE_CHECK]]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate(*args, **kwargs)
+&gt;       self.assertIn(&quot;&apos;data&apos; option value is invalid&quot;, str(error.exception))
+E       AssertionError: &quot;&apos;data&apos; option value is invalid&quot; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/filter/test_validate.py:139: AssertionError</failure></testcase><testcase classname="plugins.filter.test_validate.TestValidate" file="plugins/filter/test_validate.py" line="148" name="test_invalid_validate_plugin_config_options" time="0.020"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.filter.test_validate.TestValidate testMethod=test_invalid_validate_plugin_config_options&gt;
+
+    def test_invalid_validate_plugin_config_options(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        args = [
+            DATA,
+            [
+                CRITERIA_CRC_ERROR_CHECK,
+                CRITERIA_ENABLED_CHECK,
+                CRITERIA_OPER_STATUS_UP_CHECK,
+            ],
+        ]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;, &quot;draft&quot;: &quot;draft0&quot;}
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&quot;,
+&gt;           str(error.exception),
+        )
+E       AssertionError: &apos;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&apos; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/filter/test_validate.py:165: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.filter.test_validate.TestValidate testMethod=test_invalid_validate_plugin_config_options&gt;
+
+    def test_invalid_validate_plugin_config_options(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        args = [
+            DATA,
+            [
+                CRITERIA_CRC_ERROR_CHECK,
+                CRITERIA_ENABLED_CHECK,
+                CRITERIA_OPER_STATUS_UP_CHECK,
+            ],
+        ]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;, &quot;draft&quot;: &quot;draft0&quot;}
+        with self.assertRaises(AnsibleFilterError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&quot;,
+&gt;           str(error.exception),
+        )
+E       AssertionError: &apos;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&apos; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/filter/test_validate.py:165: AssertionError</failure></testcase><testcase classname="plugins.filter.test_validate.TestValidate" file="plugins/filter/test_validate.py" line="167" name="test_valid_data" time="0.013"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.filter.test_validate.TestValidate testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        args = [DATA, CRITERIA_IN_RATE_CHECK]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+&gt;       result = validate(*args, **kwargs)
+
+tests/unit/plugins/filter/test_validate.py:173: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = ({&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;})
+kwargs = {&apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def validate(*args, **kwargs):
+        if len(args) &lt; 2:
+            raise AnsibleFilterError(
+                &quot;Missing either &apos;data&apos; or &apos;criteria&apos; value in filter input,&quot;
+                &quot; refer &apos;ansible.utils.validate&apos; filter plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: args[0], &quot;criteria&quot;: args[1]}
+        if kwargs.get(&quot;engine&quot;):
+            params.update({&quot;engine&quot;: kwargs[&quot;engine&quot;]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate filter&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleFilterError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleFilterError(
+                &quot;validate lookup plugin failed with errors: {msg}&quot;.format(
+&gt;                   msg=validator_result.get(&quot;msg&quot;)
+                )
+            )
+E           AnsibleFilterError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/filter/validate.py:121: AnsibleFilterError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.filter.test_validate.TestValidate testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        args = [DATA, CRITERIA_IN_RATE_CHECK]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+&gt;       result = validate(*args, **kwargs)
+
+tests/unit/plugins/filter/test_validate.py:173: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = ({&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;})
+kwargs = {&apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def validate(*args, **kwargs):
+        if len(args) &lt; 2:
+            raise AnsibleFilterError(
+                &quot;Missing either &apos;data&apos; or &apos;criteria&apos; value in filter input,&quot;
+                &quot; refer &apos;ansible.utils.validate&apos; filter plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: args[0], &quot;criteria&quot;: args[1]}
+        if kwargs.get(&quot;engine&quot;):
+            params.update({&quot;engine&quot;: kwargs[&quot;engine&quot;]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate filter&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleFilterError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleFilterError(
+                &quot;validate lookup plugin failed with errors: {msg}&quot;.format(
+&gt;                   msg=validator_result.get(&quot;msg&quot;)
+                )
+            )
+E           AnsibleFilterError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/filter/validate.py:121: AnsibleFilterError</failure></testcase><testcase classname="plugins.lookup.test_validate.TestValidate" file="plugins/lookup/test_validate.py" line="107" name="test_invalid_argspec" time="0.013"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.lookup.test_validate.TestValidate testMethod=test_invalid_argspec&gt;
+
+    def test_invalid_argspec(self):
+        &quot;&quot;&quot;Check passing invalid argspec&quot;&quot;&quot;
+    
+        # missing required arguments
+        with self.assertRaises(AnsibleLookupError) as error:
+            self._lp.run([DATA], {})
+        self.assertIn(
+            &quot;missing either &apos;data&apos; or &apos;criteria&apos; value&quot;, str(error.exception)
+        )
+    
+        terms = [DATA, [CRITERIA_IN_RATE_CHECK]]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.sample&quot;}
+        variables = {}
+        with self.assertRaises(AnsibleLookupError) as error:
+            self._lp.run(terms, variables, **kwargs)
+        self.assertIn(
+            &quot;For engine &apos;ansible.utils.sample&apos; error loading&quot;,
+            str(error.exception),
+        )
+    
+        terms = [&quot;invalid data&quot;, [CRITERIA_IN_RATE_CHECK]]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        variables = {}
+        with self.assertRaises(AnsibleLookupError) as error:
+            self._lp.run(terms, variables, **kwargs)
+&gt;       self.assertIn(&quot;&apos;data&apos; option value is invalid&quot;, str(error.exception))
+E       AssertionError: &quot;&apos;data&apos; option value is invalid&quot; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/lookup/test_validate.py:133: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.lookup.test_validate.TestValidate testMethod=test_invalid_argspec&gt;
+
+    def test_invalid_argspec(self):
+        &quot;&quot;&quot;Check passing invalid argspec&quot;&quot;&quot;
+    
+        # missing required arguments
+        with self.assertRaises(AnsibleLookupError) as error:
+            self._lp.run([DATA], {})
+        self.assertIn(
+            &quot;missing either &apos;data&apos; or &apos;criteria&apos; value&quot;, str(error.exception)
+        )
+    
+        terms = [DATA, [CRITERIA_IN_RATE_CHECK]]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.sample&quot;}
+        variables = {}
+        with self.assertRaises(AnsibleLookupError) as error:
+            self._lp.run(terms, variables, **kwargs)
+        self.assertIn(
+            &quot;For engine &apos;ansible.utils.sample&apos; error loading&quot;,
+            str(error.exception),
+        )
+    
+        terms = [&quot;invalid data&quot;, [CRITERIA_IN_RATE_CHECK]]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        variables = {}
+        with self.assertRaises(AnsibleLookupError) as error:
+            self._lp.run(terms, variables, **kwargs)
+&gt;       self.assertIn(&quot;&apos;data&apos; option value is invalid&quot;, str(error.exception))
+E       AssertionError: &quot;&apos;data&apos; option value is invalid&quot; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/lookup/test_validate.py:133: AssertionError</failure></testcase><testcase classname="plugins.lookup.test_validate.TestValidate" file="plugins/lookup/test_validate.py" line="143" name="test_invalid_validate_plugin_config_options" time="0.023"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.lookup.test_validate.TestValidate testMethod=test_invalid_validate_plugin_config_options&gt;
+
+    def test_invalid_validate_plugin_config_options(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        terms = [
+            DATA,
+            [
+                CRITERIA_CRC_ERROR_CHECK,
+                CRITERIA_ENABLED_CHECK,
+                CRITERIA_OPER_STATUS_UP_CHECK,
+            ],
+        ]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        variables = {}
+&gt;       result = self._lp.run(terms, variables, **kwargs)
+
+tests/unit/plugins/lookup/test_validate.py:157: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;ansible_collections.ansible.utils.plugins.lookup.validate.LookupModule object at 0x7f28a3404a90&gt;
+terms = [{&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...&apos;object&apos;}, {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;oper_status&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}]]
+variables = {}, kwargs = {&apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;},...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;},...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def run(self, terms, variables, **kwargs):
+        if len(terms) &lt; 2:
+            raise AnsibleLookupError(
+                &quot;missing either &apos;data&apos; or &apos;criteria&apos; value in lookup input,&quot;
+                &quot; refer ansible.utils.validate lookup plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: terms[0], &quot;criteria&quot;: terms[1]}
+        if kwargs.get(&quot;engine&quot;):
+            params.update({&quot;engine&quot;: kwargs[&quot;engine&quot;]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate lookup&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleLookupError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            plugin_vars=variables,
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleLookupError(
+                &quot;validate lookup plugin failed with errors: {validator_result}&quot;.format(
+&gt;                   validator_result=validator_result.get(&quot;msg&quot;)
+                )
+            )
+E           AnsibleLookupError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/lookup/validate.py:137: AnsibleLookupError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.lookup.test_validate.TestValidate testMethod=test_invalid_validate_plugin_config_options&gt;
+
+    def test_invalid_validate_plugin_config_options(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+    
+        terms = [
+            DATA,
+            [
+                CRITERIA_CRC_ERROR_CHECK,
+                CRITERIA_ENABLED_CHECK,
+                CRITERIA_OPER_STATUS_UP_CHECK,
+            ],
+        ]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        variables = {}
+&gt;       result = self._lp.run(terms, variables, **kwargs)
+
+tests/unit/plugins/lookup/test_validate.py:157: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;ansible_collections.ansible.utils.plugins.lookup.validate.LookupModule object at 0x7f28a3404a90&gt;
+terms = [{&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...&apos;object&apos;}, {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;oper_status&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}]]
+variables = {}, kwargs = {&apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;},...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;},...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def run(self, terms, variables, **kwargs):
+        if len(terms) &lt; 2:
+            raise AnsibleLookupError(
+                &quot;missing either &apos;data&apos; or &apos;criteria&apos; value in lookup input,&quot;
+                &quot; refer ansible.utils.validate lookup plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: terms[0], &quot;criteria&quot;: terms[1]}
+        if kwargs.get(&quot;engine&quot;):
+            params.update({&quot;engine&quot;: kwargs[&quot;engine&quot;]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate lookup&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleLookupError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            plugin_vars=variables,
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleLookupError(
+                &quot;validate lookup plugin failed with errors: {validator_result}&quot;.format(
+&gt;                   validator_result=validator_result.get(&quot;msg&quot;)
+                )
+            )
+E           AnsibleLookupError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/lookup/validate.py:137: AnsibleLookupError</failure></testcase><testcase classname="plugins.lookup.test_validate.TestValidate" file="plugins/lookup/test_validate.py" line="166" name="test_valid_data" time="0.015"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.lookup.test_validate.TestValidate testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        terms = [DATA, CRITERIA_IN_RATE_CHECK]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        variables = {}
+&gt;       result = self._lp.run(terms, variables, **kwargs)
+
+tests/unit/plugins/lookup/test_validate.py:173: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;ansible_collections.ansible.utils.plugins.lookup.validate.LookupModule object at 0x7f28a3404b50&gt;
+terms = [{&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}]
+variables = {}, kwargs = {&apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def run(self, terms, variables, **kwargs):
+        if len(terms) &lt; 2:
+            raise AnsibleLookupError(
+                &quot;missing either &apos;data&apos; or &apos;criteria&apos; value in lookup input,&quot;
+                &quot; refer ansible.utils.validate lookup plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: terms[0], &quot;criteria&quot;: terms[1]}
+        if kwargs.get(&quot;engine&quot;):
+            params.update({&quot;engine&quot;: kwargs[&quot;engine&quot;]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate lookup&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleLookupError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            plugin_vars=variables,
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleLookupError(
+                &quot;validate lookup plugin failed with errors: {validator_result}&quot;.format(
+&gt;                   validator_result=validator_result.get(&quot;msg&quot;)
+                )
+            )
+E           AnsibleLookupError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/lookup/validate.py:137: AnsibleLookupError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.lookup.test_validate.TestValidate testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        terms = [DATA, CRITERIA_IN_RATE_CHECK]
+        kwargs = {&quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;}
+        variables = {}
+&gt;       result = self._lp.run(terms, variables, **kwargs)
+
+tests/unit/plugins/lookup/test_validate.py:173: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;ansible_collections.ansible.utils.plugins.lookup.validate.LookupModule object at 0x7f28a3404b50&gt;
+terms = [{&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}]
+variables = {}, kwargs = {&apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def run(self, terms, variables, **kwargs):
+        if len(terms) &lt; 2:
+            raise AnsibleLookupError(
+                &quot;missing either &apos;data&apos; or &apos;criteria&apos; value in lookup input,&quot;
+                &quot; refer ansible.utils.validate lookup plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: terms[0], &quot;criteria&quot;: terms[1]}
+        if kwargs.get(&quot;engine&quot;):
+            params.update({&quot;engine&quot;: kwargs[&quot;engine&quot;]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate lookup&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleLookupError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            plugin_vars=variables,
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleLookupError(
+                &quot;validate lookup plugin failed with errors: {validator_result}&quot;.format(
+&gt;                   validator_result=validator_result.get(&quot;msg&quot;)
+                )
+            )
+E           AnsibleLookupError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/lookup/validate.py:137: AnsibleLookupError</failure></testcase><testcase classname="plugins.sub_plugins.cli_parsers.test_json_parser.TestJsonParser" file="plugins/sub_plugins/cli_parsers/test_json_parser.py" line="35" name="test_invalid_json" time="0.004"></testcase><testcase classname="plugins.sub_plugins.cli_parsers.test_json_parser.TestJsonParser" file="plugins/sub_plugins/cli_parsers/test_json_parser.py" line="16" name="test_json_parser" time="0.010"></testcase><testcase classname="plugins.sub_plugins.cli_parsers.test_textfsm_parser.TestTextfsmParser" file="plugins/sub_plugins/cli_parsers/test_textfsm_parser.py" line="20" name="test_textfsm_parser" time="0.036"></testcase><testcase classname="plugins.sub_plugins.cli_parsers.test_textfsm_parser.TestTextfsmParser" file="plugins/sub_plugins/cli_parsers/test_textfsm_parser.py" line="53" name="test_textfsm_parser_invalid_parser" time="0.005"></testcase><testcase classname="plugins.sub_plugins.cli_parsers.test_ttp_parser.TestTextfsmParser" file="plugins/sub_plugins/cli_parsers/test_ttp_parser.py" line="53" name="test_textfsm_parser_invalid_parser" time="0.004"></testcase><testcase classname="plugins.sub_plugins.cli_parsers.test_ttp_parser.TestTextfsmParser" file="plugins/sub_plugins/cli_parsers/test_ttp_parser.py" line="20" name="test_ttp_parser" time="0.085"></testcase><testcase classname="plugins.sub_plugins.cli_parsers.test_xml_parser.TestXmlParser" file="plugins/sub_plugins/cli_parsers/test_xml_parser.py" line="33" name="test_invalid_xml" time="0.004"></testcase><testcase classname="plugins.sub_plugins.cli_parsers.test_xml_parser.TestXmlParser" file="plugins/sub_plugins/cli_parsers/test_xml_parser.py" line="20" name="test_valid_xml" time="0.007"></testcase><testcase classname="plugins.test.test_in_any_network.TestInAnyNetwork" file="plugins/test/test_in_any_network.py" line="24" name="test_invalid_data" time="0.007"></testcase><testcase classname="plugins.test.test_in_any_network.TestInAnyNetwork" file="plugins/test/test_in_any_network.py" line="38" name="test_valid_data" time="0.012"></testcase><testcase classname="plugins.test.test_in_network.TestInNetwork" file="plugins/test/test_in_network.py" line="23" name="test_invalid_data" time="0.007"></testcase><testcase classname="plugins.test.test_in_network.TestInNetwork" file="plugins/test/test_in_network.py" line="31" name="test_valid_data" time="0.011"></testcase><testcase classname="plugins.test.test_in_one_network.TestInOneNetwork" file="plugins/test/test_in_one_network.py" line="24" name="test_invalid_data" time="0.006"></testcase><testcase classname="plugins.test.test_in_one_network.TestInOneNetwork" file="plugins/test/test_in_one_network.py" line="38" name="test_valid_data" time="0.012"></testcase><testcase classname="plugins.test.test_ip.TestIp" file="plugins/test/test_ip.py" line="21" name="test_invalid_data" time="0.007"></testcase><testcase classname="plugins.test.test_ip.TestIp" file="plugins/test/test_ip.py" line="29" name="test_valid_data" time="0.010"></testcase><testcase classname="plugins.test.test_ip_address.TestIpAddress" file="plugins/test/test_ip_address.py" line="23" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_ip_address.TestIpAddress" file="plugins/test/test_ip_address.py" line="31" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.test.test_ipv4.TestIpV4" file="plugins/test/test_ipv4.py" line="21" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_ipv4.TestIpV4" file="plugins/test/test_ipv4.py" line="29" name="test_valid_data" time="0.010"></testcase><testcase classname="plugins.test.test_ipv4_address.TestIpV4Address" file="plugins/test/test_ipv4_address.py" line="23" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_ipv4_address.TestIpV4Address" file="plugins/test/test_ipv4_address.py" line="31" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.test.test_ipv4_hostmask.TestIpV4Hostmask" file="plugins/test/test_ipv4_hostmask.py" line="23" name="test_invalid_data" time="0.006"></testcase><testcase classname="plugins.test.test_ipv4_hostmask.TestIpV4Hostmask" file="plugins/test/test_ipv4_hostmask.py" line="31" name="test_valid_data" time="0.010"></testcase><testcase classname="plugins.test.test_ipv4_netmask.TestIpV4Netmask" file="plugins/test/test_ipv4_netmask.py" line="23" name="test_invalid_data" time="0.008"></testcase><testcase classname="plugins.test.test_ipv4_netmask.TestIpV4Netmask" file="plugins/test/test_ipv4_netmask.py" line="31" name="test_valid_data" time="0.012"></testcase><testcase classname="plugins.test.test_ipv6.TestIpV6" file="plugins/test/test_ipv6.py" line="21" name="test_invalid_data" time="0.010"></testcase><testcase classname="plugins.test.test_ipv6.TestIpV6" file="plugins/test/test_ipv6.py" line="29" name="test_valid_data" time="0.015"></testcase><testcase classname="plugins.test.test_ipv6_address.TestIpV6Address" file="plugins/test/test_ipv6_address.py" line="23" name="test_invalid_data" time="0.008"></testcase><testcase classname="plugins.test.test_ipv6_address.TestIpV6Address" file="plugins/test/test_ipv6_address.py" line="31" name="test_valid_data" time="0.008"></testcase><testcase classname="plugins.test.test_ipv6_ipv4_mapped.TestIpV6IpV4Mapped" file="plugins/test/test_ipv6_ipv4_mapped.py" line="23" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_ipv6_ipv4_mapped.TestIpV6IpV4Mapped" file="plugins/test/test_ipv6_ipv4_mapped.py" line="31" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.test.test_ipv6_sixtofour.TestIpV6SixToFour" file="plugins/test/test_ipv6_sixtofour.py" line="23" name="test_invalid_data" time="0.005"></testcase><testcase classname="plugins.test.test_ipv6_sixtofour.TestIpV6SixToFour" file="plugins/test/test_ipv6_sixtofour.py" line="31" name="test_valid_data" time="0.007"></testcase><testcase classname="plugins.test.test_ipv6_teredo.TestIpV6Teredo" file="plugins/test/test_ipv6_teredo.py" line="23" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_ipv6_teredo.TestIpV6Teredo" file="plugins/test/test_ipv6_teredo.py" line="31" name="test_valid_data" time="0.013"></testcase><testcase classname="plugins.test.test_loopback.TestLoopback" file="plugins/test/test_loopback.py" line="21" name="test_invalid_data" time="0.005"></testcase><testcase classname="plugins.test.test_loopback.TestLoopback" file="plugins/test/test_loopback.py" line="29" name="test_valid_data" time="0.008"></testcase><testcase classname="plugins.test.test_mac.TestMac" file="plugins/test/test_mac.py" line="21" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_mac.TestMac" file="plugins/test/test_mac.py" line="29" name="test_valid_data" time="0.010"></testcase><testcase classname="plugins.test.test_multicast.TestMulticast" file="plugins/test/test_multicast.py" line="21" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_multicast.TestMulticast" file="plugins/test/test_multicast.py" line="29" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.test.test_private.TestPrivate" file="plugins/test/test_private.py" line="21" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_private.TestPrivate" file="plugins/test/test_private.py" line="29" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.test.test_public.TestPublic" file="plugins/test/test_public.py" line="21" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_public.TestPublic" file="plugins/test/test_public.py" line="29" name="test_valid_data" time="0.014"></testcase><testcase classname="plugins.test.test_reserved.TestReserved" file="plugins/test/test_reserved.py" line="21" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_reserved.TestReserved" file="plugins/test/test_reserved.py" line="29" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.test.test_resolvable.TestResolvable" file="plugins/test/test_resolvable.py" line="23" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_resolvable.TestResolvable" file="plugins/test/test_resolvable.py" line="31" name="test_valid_data" time="0.056"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_resolvable.TestResolvable testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        result = _resolvable(host=&quot;www.google.com&quot;)
+&gt;       self.assertEqual(result, True)
+E       AssertionError: False != True
+
+tests/unit/plugins/test/test_resolvable.py:36: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_resolvable.TestResolvable testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+    
+        result = _resolvable(host=&quot;www.google.com&quot;)
+&gt;       self.assertEqual(result, True)
+E       AssertionError: False != True
+
+tests/unit/plugins/test/test_resolvable.py:36: AssertionError</failure></testcase><testcase classname="plugins.test.test_subnet_of.TestSubnetOf" file="plugins/test/test_subnet_of.py" line="21" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_subnet_of.TestSubnetOf" file="plugins/test/test_subnet_of.py" line="37" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.test.test_supernet_of.TestSupernetOf" file="plugins/test/test_supernet_of.py" line="23" name="test_invalid_data" time="0.004"></testcase><testcase classname="plugins.test.test_supernet_of.TestSupernetOf" file="plugins/test/test_supernet_of.py" line="39" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.test.test_unspecified.TestUnspecified" file="plugins/test/test_unspecified.py" line="23" name="test_invalid_data" time="0.006"></testcase><testcase classname="plugins.test.test_unspecified.TestUnspecified" file="plugins/test/test_unspecified.py" line="31" name="test_valid_data" time="0.009"></testcase><testcase classname="plugins.test.test_validate.TestValidate" file="plugins/test/test_validate.py" line="105" name="test_invalid_argspec" time="0.027"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_validate.TestValidate testMethod=test_invalid_argspec&gt;
+
+    def test_invalid_argspec(self):
+        &quot;&quot;&quot;Check passing invalid argspec&quot;&quot;&quot;
+    
+        # missing required arguments
+        args = [DATA]
+        kwargs = {}
+        with self.assertRaises(AnsibleError) as error:
+            validate(*args, **kwargs)
+        msg = &quot;missing required arguments: criteria&quot;
+        self.assertIn(msg, str(error.exception))
+    
+        kwargs = {
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+            &quot;engine&quot;: &quot;ansible.utils.sample&quot;,
+        }
+        with self.assertRaises(AnsibleError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;For engine &apos;ansible.utils.sample&apos; error loading&quot;,
+            str(error.exception),
+        )
+    
+        args = [&quot;invalid data&quot;]
+        kwargs = {
+            &quot;criteria&quot;: [CRITERIA_IN_RATE_CHECK],
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+        }
+        with self.assertRaises(AnsibleError) as error:
+            validate(*args, **kwargs)
+&gt;       self.assertIn(&quot;&apos;data&apos; option value is invalid&quot;, str(error.exception))
+E       AssertionError: &quot;&apos;data&apos; option value is invalid&quot; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/test/test_validate.py:135: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_validate.TestValidate testMethod=test_invalid_argspec&gt;
+
+    def test_invalid_argspec(self):
+        &quot;&quot;&quot;Check passing invalid argspec&quot;&quot;&quot;
+    
+        # missing required arguments
+        args = [DATA]
+        kwargs = {}
+        with self.assertRaises(AnsibleError) as error:
+            validate(*args, **kwargs)
+        msg = &quot;missing required arguments: criteria&quot;
+        self.assertIn(msg, str(error.exception))
+    
+        kwargs = {
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+            &quot;engine&quot;: &quot;ansible.utils.sample&quot;,
+        }
+        with self.assertRaises(AnsibleError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;For engine &apos;ansible.utils.sample&apos; error loading&quot;,
+            str(error.exception),
+        )
+    
+        args = [&quot;invalid data&quot;]
+        kwargs = {
+            &quot;criteria&quot;: [CRITERIA_IN_RATE_CHECK],
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+        }
+        with self.assertRaises(AnsibleError) as error:
+            validate(*args, **kwargs)
+&gt;       self.assertIn(&quot;&apos;data&apos; option value is invalid&quot;, str(error.exception))
+E       AssertionError: &quot;&apos;data&apos; option value is invalid&quot; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/test/test_validate.py:135: AssertionError</failure></testcase><testcase classname="plugins.test.test_validate.TestValidate" file="plugins/test/test_validate.py" line="163" name="test_invalid_data" time="0.011"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_validate.TestValidate testMethod=test_invalid_data&gt;
+
+    def test_invalid_data(self):
+        &quot;&quot;&quot;Check passing invalid data as per criteria&quot;&quot;&quot;
+        args = [DATA]
+        kwargs = {
+            &quot;criteria&quot;: [
+                CRITERIA_ENABLED_CHECK,
+                CRITERIA_OPER_STATUS_UP_CHECK,
+                CRITERIA_CRC_ERROR_CHECK,
+            ],
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+        }
+&gt;       result = validate(*args, **kwargs)
+
+tests/unit/plugins/test/test_validate.py:175: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = ({&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...{&apos;in_rate&apos;: 0, &apos;out_rate&apos;: 0}}, &apos;description&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}},)
+kwargs = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;enabled&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}, ...^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}], &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;enabled&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}, ...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+item = &apos;criteria&apos;, valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;enabled&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}, ...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def validate(*args, **kwargs):
+        if not len(args):
+            raise AnsibleError(
+                &quot;Missing either &apos;data&apos; value in test plugin input,&quot;
+                &quot;refer ansible.utils.validate test plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: args[0]}
+    
+        for item in [&quot;engine&quot;, &quot;criteria&quot;]:
+            if kwargs.get(item):
+                params.update({item: kwargs[item]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate test&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleError(
+                &quot;validate lookup plugin failed with errors: %s&quot;
+&gt;               % validator_result.get(&quot;msg&quot;)
+            )
+E           AnsibleError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/test/validate.py:126: AnsibleError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_validate.TestValidate testMethod=test_invalid_data&gt;
+
+    def test_invalid_data(self):
+        &quot;&quot;&quot;Check passing invalid data as per criteria&quot;&quot;&quot;
+        args = [DATA]
+        kwargs = {
+            &quot;criteria&quot;: [
+                CRITERIA_ENABLED_CHECK,
+                CRITERIA_OPER_STATUS_UP_CHECK,
+                CRITERIA_CRC_ERROR_CHECK,
+            ],
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+        }
+&gt;       result = validate(*args, **kwargs)
+
+tests/unit/plugins/test/test_validate.py:175: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = ({&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...{&apos;in_rate&apos;: 0, &apos;out_rate&apos;: 0}}, &apos;description&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}},)
+kwargs = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;enabled&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}, ...^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}], &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;enabled&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}, ...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+item = &apos;criteria&apos;, valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: [{&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;enabled&apos;: {...}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}, ...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def validate(*args, **kwargs):
+        if not len(args):
+            raise AnsibleError(
+                &quot;Missing either &apos;data&apos; value in test plugin input,&quot;
+                &quot;refer ansible.utils.validate test plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: args[0]}
+    
+        for item in [&quot;engine&quot;, &quot;criteria&quot;]:
+            if kwargs.get(item):
+                params.update({item: kwargs[item]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate test&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleError(
+                &quot;validate lookup plugin failed with errors: %s&quot;
+&gt;               % validator_result.get(&quot;msg&quot;)
+            )
+E           AnsibleError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/test/validate.py:126: AnsibleError</failure></testcase><testcase classname="plugins.test.test_validate.TestValidate" file="plugins/test/test_validate.py" line="147" name="test_invalid_validate_plugin_config_options" time="0.016"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_validate.TestValidate testMethod=test_invalid_validate_plugin_config_options&gt;
+
+    def test_invalid_validate_plugin_config_options(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+        args = [DATA]
+        kwargs = {
+            &quot;criteria&quot;: &quot;invalid criteria&quot;,
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;draft&quot;: &quot;draft0&quot;,
+        }
+    
+        with self.assertRaises(AnsibleError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&quot;,
+&gt;           str(error.exception),
+        )
+E       AssertionError: &apos;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&apos; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/test/test_validate.py:161: AssertionError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_validate.TestValidate testMethod=test_invalid_validate_plugin_config_options&gt;
+
+    def test_invalid_validate_plugin_config_options(self):
+        &quot;&quot;&quot;Check passing invalid validate plugin options&quot;&quot;&quot;
+        args = [DATA]
+        kwargs = {
+            &quot;criteria&quot;: &quot;invalid criteria&quot;,
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+            &quot;draft&quot;: &quot;draft0&quot;,
+        }
+    
+        with self.assertRaises(AnsibleError) as error:
+            validate(*args, **kwargs)
+        self.assertIn(
+            &quot;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&quot;,
+&gt;           str(error.exception),
+        )
+E       AssertionError: &apos;value of draft must be one of: draft3, draft4, draft6, draft7, got: draft0&apos; not found in &quot;validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;
+
+tests/unit/plugins/test/test_validate.py:161: AssertionError</failure></testcase><testcase classname="plugins.test.test_validate.TestValidate" file="plugins/test/test_validate.py" line="177" name="test_valid_data" time="0.012"><failure message="self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_validate.TestValidate testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+        args = [DATA]
+        kwargs = {
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+        }
+&gt;       result = validate(*args, **kwargs)
+
+tests/unit/plugins/test/test_validate.py:185: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = ({&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...{&apos;in_rate&apos;: 0, &apos;out_rate&apos;: 0}}, &apos;description&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}},)
+kwargs = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+item = &apos;criteria&apos;, valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def validate(*args, **kwargs):
+        if not len(args):
+            raise AnsibleError(
+                &quot;Missing either &apos;data&apos; value in test plugin input,&quot;
+                &quot;refer ansible.utils.validate test plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: args[0]}
+    
+        for item in [&quot;engine&quot;, &quot;criteria&quot;]:
+            if kwargs.get(item):
+                params.update({item: kwargs[item]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate test&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleError(
+                &quot;validate lookup plugin failed with errors: %s&quot;
+&gt;               % validator_result.get(&quot;msg&quot;)
+            )
+E           AnsibleError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/test/validate.py:126: AnsibleError">self = &lt;ansible_collections.ansible.vault.tests.unit.plugins.test.test_validate.TestValidate testMethod=test_valid_data&gt;
+
+    def test_valid_data(self):
+        &quot;&quot;&quot;Check passing valid data as per criteria&quot;&quot;&quot;
+        args = [DATA]
+        kwargs = {
+            &quot;criteria&quot;: CRITERIA_IN_RATE_CHECK,
+            &quot;engine&quot;: &quot;ansible.utils.jsonschema&quot;,
+        }
+&gt;       result = validate(*args, **kwargs)
+
+tests/unit/plugins/test/test_validate.py:185: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = ({&apos;GigabitEthernet0/0/0/0&apos;: {&apos;auto_negotiate&apos;: False, &apos;counters&apos;: {&apos;in_crc_errors&apos;: 0, &apos;in_errors&apos;: 0, &apos;rate&apos;: {&apos;in_ra...{&apos;in_rate&apos;: 0, &apos;out_rate&apos;: 0}}, &apos;description&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}},)
+kwargs = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;type&apos;: &apos;object&apos;}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+item = &apos;criteria&apos;, valid = True, argspec_result = {}
+updated_params = {&apos;criteria&apos;: {&apos;patternProperties&apos;: {&apos;^.*&apos;: {&apos;properties&apos;: {&apos;counters&apos;: {&apos;properties&apos;: {...}}}, &apos;type&apos;: &apos;object&apos;}}, &apos;ty...ription&apos;: &apos;# interface is configures with Ansible&apos;, &apos;duplex_mode&apos;: &apos;full&apos;, ...}}, &apos;engine&apos;: &apos;ansible.utils.jsonschema&apos;}
+validator_engine = None
+validator_result = {&apos;failed&apos;: True, &apos;msg&apos;: &quot;For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)&quot;}
+
+    def validate(*args, **kwargs):
+        if not len(args):
+            raise AnsibleError(
+                &quot;Missing either &apos;data&apos; value in test plugin input,&quot;
+                &quot;refer ansible.utils.validate test plugin documentation for details&quot;
+            )
+    
+        params = {&quot;data&quot;: args[0]}
+    
+        for item in [&quot;engine&quot;, &quot;criteria&quot;]:
+            if kwargs.get(item):
+                params.update({item: kwargs[item]})
+    
+        valid, argspec_result, updated_params = check_argspec(
+            DOCUMENTATION,
+            &quot;validate test&quot;,
+            schema_conditionals=ARGSPEC_CONDITIONALS,
+            **params
+        )
+        if not valid:
+            raise AnsibleError(
+                &quot;{argspec_result} with errors: {argspec_errors}&quot;.format(
+                    argspec_result=argspec_result.get(&quot;msg&quot;),
+                    argspec_errors=argspec_result.get(&quot;errors&quot;),
+                )
+            )
+    
+        validator_engine, validator_result = _load_validator(
+            engine=updated_params[&quot;engine&quot;],
+            data=updated_params[&quot;data&quot;],
+            criteria=updated_params[&quot;criteria&quot;],
+            kwargs=kwargs,
+        )
+        if validator_result.get(&quot;failed&quot;):
+            raise AnsibleError(
+                &quot;validate lookup plugin failed with errors: %s&quot;
+&gt;               % validator_result.get(&quot;msg&quot;)
+            )
+E           AnsibleError: validate lookup plugin failed with errors: For engine &apos;ansible.utils.jsonschema&apos; error loading the corresponding validate plugin: invalid syntax (__init__.py, line 56)
+
+../utils/plugins/test/validate.py:126: AnsibleError</failure></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="52" name="test_roundtrip_large" time="60.663"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="68" name="test_to_paths_empty_list" time="0.015"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="74" name="test_to_paths_list_of_empty_list" time="0.014"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="92" name="test_to_paths_only_empty_list" time="0.006"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="46" name="test_to_paths_prepend" time="0.011"></testcase><testcase classname="module_utils.test_to_paths.TestToPaths" file="module_utils/test_to_paths.py" line="34" name="test_to_paths_wantlist" time="0.007"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="123" name="test_fn_check_argspec_fail_no_parser_name" time="0.052"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="88" name="test_fn_check_argspec_pass" time="0.018"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="73" name="test_fn_debug" time="0.013"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="152" name="test_fn_extended_check_argspec_missing_tpath_or_command" time="0.012"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="138" name="test_fn_extended_check_argspec_parser_name_not_coll" time="0.011"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="315" name="test_fn_get_template_contents_missing" time="0.013"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="325" name="test_fn_get_template_contents_not_specified" time="0.011"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="303" name="test_fn_get_template_contents_pass" time="0.013"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="180" name="test_fn_load_parser_fail" time="0.011"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="166" name="test_fn_load_parser_pass" time="0.011"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="241" name="test_fn_os_from_task_vars" time="0.011"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="341" name="test_fn_prune_result_not_exist" time="0.010"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="332" name="test_fn_prune_result_pass" time="0.016"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="348" name="test_fn_run_command_lx_rc0" time="0.017"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="364" name="test_fn_run_command_lx_rc1" time="0.026"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="381" name="test_fn_run_command_network" time="0.024"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="395" name="test_fn_run_command_not_specified" time="0.019"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="457" name="test_fn_run_fail_argspec" time="0.025"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="471" name="test_fn_run_fail_command" time="0.021"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="496" name="test_fn_run_fail_missing_parser" time="0.020"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="577" name="test_fn_run_net_device_error" time="0.019"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="505" name="test_fn_run_pass_missing_parser_constants" time="0.020"></testcase><testcase classname="plugins.action.test_cli_parse.TestCli_Parse" file="plugins/action/test_cli_parse.py" line="542" name="test_fn_run_pass_missing_parser_in_parser" time="0.022"></testcase></testsuite></testsuites>

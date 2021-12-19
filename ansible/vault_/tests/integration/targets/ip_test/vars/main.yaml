@@ -1,0 +1,8 @@
+---
+networks: "176.34.72.180"
+status: "star"
+good_name: www.google.com
+bad_name: foo.google.com
+
+ipv4_localhost: "127.0.0.1"
+ipv6_localhost: "::1"

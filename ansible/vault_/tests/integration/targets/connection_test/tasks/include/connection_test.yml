@@ -1,0 +1,4 @@
+---
+- name: "resolvable: Check if it is possible to connect to {{ url_name }}"
+  assert:
+    that: "{{ url_name is ansible.utils.resolvable }}"

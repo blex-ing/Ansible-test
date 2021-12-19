@@ -1,0 +1,29 @@
+---
+- name: "ipv4_address: Check if {{ansible_distribution}} {{ networks }} is a valid IPV4 address"
+  assert:
+    that: "{{ networks is ansible.utils.ipv4_address }}"
+    
+
+# - name: "resolvable: Check if {{ ipv4_localhost }} is resolvable or not"
+#   assert:
+#     that: "{{ ipv4_localhost is ansible.utils.resolvable }}"
+
+# - name: "resolvable: Check if {{ ipv6_localhost }} is resolvable or not"
+#   assert:
+#     that: "{{ ipv6_localhost is ansible.utils.resolvable }}"
+
+# - name: "resolvable: Test invalidness"
+#   ansible.builtin.set_fact:
+#     criteria_check1: "{{ bad_name is ansible.utils.resolvable }}"
+
+# - name: "resolvable: Assert invalidness"
+#   assert:
+#     that: "{{ criteria_check1 == false }}"
+
+# - name: "resolvable: Test invalidness"
+#   ansible.builtin.set_fact:
+#     criteria_check2: "{{ 'invalidhost' is ansible.utils.resolvable }}"
+
+# - name: "resolvable: Assert invalidness"
+#   assert:
+#     that: "{{ criteria_check2 == false }}"

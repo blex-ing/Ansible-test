@@ -1,0 +1,37 @@
+
+module Amazon2 1.0;
+
+require {
+	type unlabeled_t;
+	type var_log_t;
+	type sshd_t;
+	type syslogd_t;
+	type trivnet1_port_t;
+	type rngd_t;
+	type cert_t;
+	class process setsched;
+	class tcp_socket name_connect;
+	class dir search;
+	class file { create open read };
+}
+
+#============= rngd_t ==============
+
+#!!!! This avc is allowed in the current policy
+allow rngd_t cert_t:dir search;
+
+#!!!! This avc is allowed in the current policy
+allow rngd_t self:process setsched;
+
+#============= sshd_t ==============
+
+#!!!! This avc is allowed in the current policy
+allow sshd_t trivnet1_port_t:tcp_socket name_connect;
+
+#!!!! This avc is allowed in the current policy
+allow sshd_t var_log_t:file { create open };
+
+#============= syslogd_t ==============
+
+#!!!! This avc is allowed in the current policy
+allow syslogd_t unlabeled_t:file read;

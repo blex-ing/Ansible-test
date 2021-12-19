@@ -1,0 +1,2 @@
+---
+dir_vault_config: "/etc/vault-ssh-helper.d/config.hcl"

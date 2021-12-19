@@ -1,0 +1,15 @@
+---
+- name: Vault OTP Test  | 1.0 Verify the configuration  Vault SSH Helper
+  command: vault-ssh-helper -verify-only  -config "{{ dir_vault_config }}"
+  ignore_errors: true
+  register: verify_config_vault_ssh
+
+# - name: "vault_status:debug"
+#   debug:
+#     msg: "{{verify_config_vault_ssh}}"
+
+- name: "vault_status: Check if OTP is working"
+  assert:
+    that: "{{ verify_config_vault_ssh.failed == False }}"
+    #fail_msg: "'vault otp does not work"
+    #success_msg: "'vault otp working"

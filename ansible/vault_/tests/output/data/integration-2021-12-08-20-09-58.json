@@ -1,0 +1,50 @@
+{
+    "targets": {
+        "connection_test": {
+            "aliases": [
+                "connection/", 
+                "connection/connection_test", 
+                "connection_test", 
+                "non_destructive/", 
+                "non_destructive/connection_test", 
+                "non_module/", 
+                "non_module/connection_test", 
+                "posix/", 
+                "role/", 
+                "role/connection_test"
+            ], 
+            "coverage": false, 
+            "coverage_label": "", 
+            "modules": [], 
+            "name": "connection_test", 
+            "python_version": "3.6", 
+            "run_time_seconds": 3, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }, 
+        "ip_test": {
+            "aliases": [
+                "ip_test", 
+                "non_destructive/", 
+                "non_destructive/ip_test", 
+                "non_module/", 
+                "non_module/ip_test", 
+                "posix/", 
+                "role/", 
+                "role/ip_test"
+            ], 
+            "coverage": false, 
+            "coverage_label": "", 
+            "modules": [], 
+            "name": "ip_test", 
+            "python_version": "3.6", 
+            "run_time_seconds": 2, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

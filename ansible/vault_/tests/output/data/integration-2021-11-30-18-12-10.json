@@ -1,0 +1,26 @@
+{
+    "targets": {
+        "vault_otp_test": {
+            "aliases": [
+                "non_destructive/", 
+                "non_destructive/vault_otp_test", 
+                "non_module/", 
+                "non_module/vault_otp_test", 
+                "posix/", 
+                "role/", 
+                "role/vault_otp_test", 
+                "vault_otp_test"
+            ], 
+            "coverage": false, 
+            "coverage_label": "", 
+            "modules": [], 
+            "name": "vault_otp_test", 
+            "python_version": "3.8", 
+            "run_time_seconds": 5, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

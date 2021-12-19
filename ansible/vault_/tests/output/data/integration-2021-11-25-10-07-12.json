@@ -1,0 +1,48 @@
+{
+    "targets": {
+        "a_vault_test": {
+            "aliases": [
+                "a_vault_test", 
+                "non_destructive/", 
+                "non_destructive/a_vault_test", 
+                "non_module/", 
+                "non_module/a_vault_test", 
+                "posix/", 
+                "role/", 
+                "role/a_vault_test"
+            ], 
+            "coverage": false, 
+            "coverage_label": "", 
+            "modules": [], 
+            "name": "a_vault_test", 
+            "python_version": "3.8", 
+            "run_time_seconds": 4, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }, 
+        "ip_test": {
+            "aliases": [
+                "ip_test", 
+                "non_destructive/", 
+                "non_destructive/ip_test", 
+                "non_module/", 
+                "non_module/ip_test", 
+                "posix/", 
+                "role/", 
+                "role/ip_test"
+            ], 
+            "coverage": false, 
+            "coverage_label": "", 
+            "modules": [], 
+            "name": "ip_test", 
+            "python_version": "3.8", 
+            "run_time_seconds": 4, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

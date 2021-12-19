@@ -1,0 +1,14 @@
+- name:  Vault SSH Helper | {{ansible_os_family}} Linux {{ansible_distribution_major_version}} {{ansible_architecture}} | Install Vault SSH Helper
+  include_tasks: "{{ ansible_local_parameters.general.suse15 }}"
+  when:
+    - ansible_distribution_major_version == '15'
+    
+- name:  Vault SSH Helper | {{ansible_os_family}} Linux {{ansible_distribution_major_version}} {{ansible_architecture}} | Install Vault SSH Helper
+  include_tasks: "{{ ansible_local_parameters.general.suse12 }}" 
+  when:
+    - ansible_distribution_major_version == '12'
+
+- name:  Vault SSH Helper | {{ansible_os_family}} Linux {{ansible_distribution_major_version}} {{ansible_architecture}} | Install Vault SSH Helper
+  include_tasks: "{{ ansible_local_parameters.general.suse11 }}"
+  when:
+    - ansible_distribution_major_version == '11'
