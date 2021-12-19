@@ -1,0 +1,2301 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "433219d1ec16a8c90389e8a0ad545ec03383f51679bb8656fe4403ca84b44bc8",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b0538b0e51859b84f87b87a60bf73a0ae5d4d4aa642ddebc87facda45c94648d",
+   "format": 1
+  },
+  {
+   "name": ".gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52278bbc7128ff30345787e4559a2cfbaa62b60453c3002a85efddbcb33fad6d",
+   "format": 1
+  },
+  {
+   "name": ".dpl",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4aa62bc783016ab0fe94073205469798492e0e39c9ab61cfe327a93fa64ab6a2",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ca5ccc2b1e2c3f7c0ddb82ff2c2e2de7d467397bb6377eb1b39f4af87982926",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "470a1a6b84dcb3874a9d347e19e4e5b14308159faa1f867742fa66de34d31275",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4ff9ee6ae5beb5102a24dbac29c6c12cebf5439108a9384705e045e18e2e1abd",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bca80900f3a7909b950022208d00ad0463d5d5b60a6fa17e58eada46e882ac5b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "735603b20ce8302fd44469646b26776242674b0f17d9a8a96694ca0cd5c8b53b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cba790ac63c816757f1884b7730e6f613adb85d25dd4e6dfb1c4295354080636",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "06fa78fd787c577f0c36b5e0f48508e489206ec283b71cf682b7f1207385535e",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ea0150d58f1d7dde3a81e015196498e96bb285ec3ba313719a122130b1a4d698",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7558d44e736dffdee00eb1acbedda26141e95c332a8b7292d18957d3b6f16542",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "22bf7fc54c30a0a3b2104a60618f25f6c7fd432cf7943ff13f2c1e303f192e31",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5440985875a3d5e31203458fe375fdbd45b3822c7518078bd326e1fa436b4254",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pgsql/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a853ce8d74ac7b2f9b07cf9ea7666cfdf2ab70be6ded4328836a64ecbf2fea0",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ca5ccc2b1e2c3f7c0ddb82ff2c2e2de7d467397bb6377eb1b39f4af87982926",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/tasks/setup-RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e51de9d3f9231068565b8f9743426934082b64b6de667c585990057b1e226297",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/tasks/setup-Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d94a492aaf72211eaef663fe981a83346cdd7fec0129ff2411f89adc482fe668",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "39b46f1269a4db9b7c638c0135cd87b9deb8aaba787dc5614b605be4e99bea44",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bac5cf6d4a577fe67155c93deeb6d7a59cfb9e628fd129460ae60010a87df08b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/molecule/default/playbook-7.4.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2998e3c794a206df99e3e577cb0efe45080e8261ef06331ccb76cc0890825455",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a957a37b91449682f69685c5619b8537b92205602c881e75eeb8d973dad03fbc",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/molecule/default/playbook-7.2.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "12887f120e42f17e8a46e4766d9672e49ae6bc113f4341aed46d5f26fb87b10d",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bf970411915ba5cde95167918f755e7d9036c4cef0e4ec2e209d748746c91438",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b2f4cbbad2c887f83a2aeff06e55ac683c4fabdf460b41ae441e658bdce38288",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ecb41c7b1f7fc3d7eb2fc1e21c59b7c1c994ac4d8f7a649cce4a8b9b17f4ee37",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57d8e47e761d715347f0aa787b4b0d4194c3fdb0c041dc1fab080e06c5447498",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "98ad5bbf96660efd836c1e957cb3420863a1610d694d5d6f58534409e2ada7bb",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7ba4553e7789b47ccebc43780d396263e26e18d6074c1a99093cf2f7f4bc936",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f90fe8b8c620acccddd9e2914e447d1babbb45d7a68684e7aabbd2ca293b2817",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b73a8c4bc4f6c0b6a2904eb8228417afc5e9d559448edc4648b85ba91230802",
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_versions/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "15b5438476dc1fab047801725a8a5c5cd6731d9dddaccec6ba3e5bd4cc254a2b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f20a411026a000b3e675b869dda6d1fb8fbf9daa7389e0377e8dec25647ec843",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/tasks/configure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d98a777025f729a4823e9855c286ba9e50773e1793856daeb37b367513956a4a",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b4d253373a1fb8fef76f43150de2f144d911801d7d1d46e5544531cedc80379b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f237b25acb7f81ff8d00878d5129cf1e102429ab271b3d8a4018fdf520660ed4",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/molecule/default/xdebug-test.php",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac7fc3704bef04c2eb63da23be55c8eb1b560e63d2e15dd2327d01ff2c19029b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63e8cfa0ba743771fd8350fe70c37ff4abe4984dc036dfc77a9511bbb34fd733",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eebf58c1b7f16b0d1714fc6841e709ab556c099c63a0a9104a95c55799205802",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/templates/xdebug.ini.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c7be6de2cf4823785f35079490334d5acfcaa76c08e9ad997ac368d350b2a46",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7ce207373ac8a6855e962de7c21e29655b17ca26372b24add7f14dd9de2048f6",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4aede55fcf7b0de92d3367d6643ace058d3e19c773a383ec770b8b29f1dd76d",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d441af70ef08163d5a6b09de7822d448265d71d3aca6f056f45282c960ff212a",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed42974d16e7aa05e48104e10337197fced857b483ffee652f3e8fc4ec1a5675",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3907516c47d6871bc764f7c30595e3e1bca3470554fe9edc61ebdd5b415affde",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5440985875a3d5e31203458fe375fdbd45b3822c7518078bd326e1fa436b4254",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xdebug/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a2079f78f58f4b1a7d8c7f4133a2ef687e127db9c77c1a993be03f97690b787",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f20a411026a000b3e675b869dda6d1fb8fbf9daa7389e0377e8dec25647ec843",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/tasks/configure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "be239d22658270f6ecfe9218f79a9709a16336c43917d591e12f8765606aae57",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "752e0e02210aecea02b6364c1c83bb9f5776a73cbee957d300c6779406c94671",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cb4a77d2e17b32959245eca2a389531e221fdf9748ba8a834fbb1ec2b466199c",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/molecule/default/xhprof-test.php",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f5141617dddbff01262619adbbc01c6502c899e90cf21f904f7ad99ee7e509a9",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63e8cfa0ba743771fd8350fe70c37ff4abe4984dc036dfc77a9511bbb34fd733",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "981a9f2396ad0803caa17c0b7e9f619a2084c1d34b5cb9dfea972c8eedbbffb0",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/templates/xhprof.ini.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4b5e64fca4196c87eb0c5ef3177d8f041109312ffe79510b055141770e64154e",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b27e2b4a321c4fd93060f785c37a51199dbb2aa8145a4624e80d55309dea352",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "abfad588ec015e88f9edcd5a42835f490d11291ea9c53af2664e5ec40c5c8f17",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8793e120ae9464c1b31f1efe4247c4f0e310e1729413fb6006d0cce182ac4f71",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fd43522c159f0124d4d3a18412fc435da298acf7ec69638711b88071c9b45817",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ab74308731d79c5fa387d02ba176a5d8e9725af3569661bb3cff7502b562783",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5440985875a3d5e31203458fe375fdbd45b3822c7518078bd326e1fa436b4254",
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_xhprof/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b81d987c42310be868043a2ec70686d548739e1ab84755c15142db43594185e",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ca5ccc2b1e2c3f7c0ddb82ff2c2e2de7d467397bb6377eb1b39f4af87982926",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57182bc82135003082765adbc52cd8ce735738b8cbe8b303c58c2ea5323bfb31",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed0395070aa2692e3d628f7dfcbdcd8444950cbaa31702d8cf6ef3e413e704eb",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/molecule/default/memcached-test.php",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c5d4ab5151e260cadc402f05c166897342b1d10bd88c3ce2cf3e2c86b74fb38",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f221c6195c0503de4c1f8ac4ebe4d12fe988684b16de01022612d206614e749b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e8e786ed4c10ff1aae8fbb58d54e289d533fff2b9e1fcb65e7d96e7b7663a92a",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cba790ac63c816757f1884b7730e6f613adb85d25dd4e6dfb1c4295354080636",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57b472b29c66768b973807afb9032d6161b1a32fededc61bdc308720a807fb13",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "614fdd3213f93cb0341a9b6546826fcf11f79bbc18561c72e3385f1f89f11ddc",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6c1bcedd3e7bf9c607e8327cf78658c99f9bf03853138e34052f57a7760042ff",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd511ee92f8837030b1717a6c8aa369ad4f79e86f85a06a87a32350e55f5f50d",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5440985875a3d5e31203458fe375fdbd45b3822c7518078bd326e1fa436b4254",
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_memcached/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "94cf5874f8b12b8504b464f81851281a67e04b08c9aff5c67f94efdbebe3a12c",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f20a411026a000b3e675b869dda6d1fb8fbf9daa7389e0377e8dec25647ec843",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/tasks/xhprof.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "77c7d7bb5a9cb8a6363dd5668e25a70c6c873289448ff0baa85a6b6193e13f78",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/tasks/configure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e7bb5d432787be1f888cb1be0d1e4feb9b1de282cb2367ab8abfd74f67ad2571",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "787119d8a7487f65afccb7419131cf6259166e1c559c6303238cd8275b976c61",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b7de0d9e824889e59ef201278010867a2f81a6e891807ae6df0e014df89db98f",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63e8cfa0ba743771fd8350fe70c37ff4abe4984dc036dfc77a9511bbb34fd733",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/molecule/default/tideways-test.php",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ada9a9ef0255285ad44c405739ed1dbe5753c5005fa65fd4a1150864f08c5c1e",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "86e0caa17ffb06217b3fe0bd1865a21e554069b424f4e4b4c350211603ec81d0",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/templates/tideways.ini.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e38ecbafaab43f511e8530b4c9c8f9962df8154b0e5d8d67cd2315f0a864763f",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7e746a0d270c4a528ef0ecd690c8f280cc21111a56f22884e581bfdbc9203d1c",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "862b3e5c3ee6a784ed05de3252a7eefdb7b7ae59c4228fa883171135c7bb38d9",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f29ca750067b3bcd46b6289b2eab3a52a8addbaea689fa036ae954dfcd1f18cb",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1464b82cbe4744ef6c3d91ad0a0a1c0ce755d47c46e4d94b66d60e969a5324ca",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ee69bacdce0b68449c0727d988f362f23bade95604787750885c9911c813159",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5440985875a3d5e31203458fe375fdbd45b3822c7518078bd326e1fa436b4254",
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_tideways/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "76e7d73fe4eb4f60f9267b22f86bcca2248937fb5af997579b9138349092f146",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ca5ccc2b1e2c3f7c0ddb82ff2c2e2de7d467397bb6377eb1b39f4af87982926",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ad4af0d08b08d0000ba7729d0c215590b8a1b5f165a67da1add07dc5c688c59b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/tasks/install-from-source.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5cf10ebc36e2cf5231da867580ecad267c77b5fe2b10ee6e63e15614c60943d",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/files/redis.ini",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "932a451161a7802d45ef27a76e7b4940780fd6a9b18865c660d9a30526586495",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf71c92e1043ad1da81daecdb6bfcd7d1edbe1305a37873edf46e2edb87d5e0e",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/molecule/default/redis-test.php",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e87666ae7cc525c78d7d710a8ba73f4d6de7e82a2d6d64e4cf29f5c94940ab68",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4091b6e99e1bab7189cb003de68e2b99f952e0f29d791036b89c611096703d5a",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d3359b8d5e4dbbca64dd4be399c5b854a0cf556a7580eaff5af09e08c95dc019",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "18445bb990ca412debe5326c195a8cd4c8010dcf66a3f825f5bc420502c9a120",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d9cf50a43a8a763987d34a60791036b14980dcee707a4aed1393cd38281317d7",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a0e5622c56c653961805ed6a1739d4e0e6fce72498125e02440c49cf16edf01",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae504664bd253325595ebf3badf345baf97e9de36fc9ff96cfcd0100ccc1e379",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b1ff5529a16fabe3759efe95c9b35a52b6a29d1216e8ecc4a20d2e2f2dabf28",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5440985875a3d5e31203458fe375fdbd45b3822c7518078bd326e1fa436b4254",
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_redis/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4bd6640871422ea5dcbb9ac2affa13418c4902ceb986839972fea609bea68dc7",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ca5ccc2b1e2c3f7c0ddb82ff2c2e2de7d467397bb6377eb1b39f4af87982926",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6f9a4027f1c174be30a102b0dbe162c81a0c6f179a392633f3dfdca91a9e4a3d",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4ca5363374f5c931bc71284708dc27102a5debfe9e0c0e57680fa4bf2b71507a",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63e8cfa0ba743771fd8350fe70c37ff4abe4984dc036dfc77a9511bbb34fd733",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/molecule/default/pecl-test.php",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dc908f72b36b621c76a4e88f10fe59559dbded1bb8b2be8daeeee1b01a55ba0b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdea9d363478375b331d4c9cfd348c8a49176a74c7c249e134fbb37cc5095a2b",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8f7da57fdcf14a81f940cc4a1a6b1f9a0b3f38045e88d4f4384a1b85b571821c",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "54ad286719e573c800f661d4e6c8148534c159eb2367ad4ff37b073c5f75a237",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/vars/Ubuntu.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c4272941b45007baeb27e49b5ba55281370a2e29062b4d76070c111157740b0",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/vars/Debian-8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87f54ed9c0f25946f0dd469fa5ea953b5dcc832b5e987276f15a46a8c44257b0",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c4272941b45007baeb27e49b5ba55281370a2e29062b4d76070c111157740b0",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c4272941b45007baeb27e49b5ba55281370a2e29062b4d76070c111157740b0",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "92c8793734477672cf50efc89fca34bc28fbbd1362364a25df931f5a714a9c4a",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b0f88bc6fb0f5eaa47ec88104a60164d9a16684956b54040e2a2aac3d051b29",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pecl/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a04ab081f2fa3d2e663aa718dba61284cfc5660bec36add2af3cb97c56f67ed6",
+   "format": 1
+  },
+  {
+   "name": "roles/php",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f20a411026a000b3e675b869dda6d1fb8fbf9daa7389e0377e8dec25647ec843",
+   "format": 1
+  },
+  {
+   "name": "roles/php/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/tasks/configure-opcache.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f7d79f5c8508c2071adab6eb68b626c483849aee9de51f7e9d65a458ea9d2e0c",
+   "format": 1
+  },
+  {
+   "name": "roles/php/tasks/configure-apcu.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "84736ef3b2e64b326f8be9ac4205719b9e460d3e3b84bff3fb687e677058fda4",
+   "format": 1
+  },
+  {
+   "name": "roles/php/tasks/configure.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cff7bedace5e4bf71acb0283e7df276407879d9d810cd585d4c54026367dc313",
+   "format": 1
+  },
+  {
+   "name": "roles/php/tasks/setup-RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c6d19ac1648afd8559558f463d02f578ffd927af2a22852514a9f369eea4ee1",
+   "format": 1
+  },
+  {
+   "name": "roles/php/tasks/setup-Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f84b456a28185639fdbaab59399b619688c438cf26e64a9393b3c5b44cd33902",
+   "format": 1
+  },
+  {
+   "name": "roles/php/tasks/configure-fpm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "874ea1139e93805f3614741049ad0f471c98d783f8f7af09c0089fef29ce38a7",
+   "format": 1
+  },
+  {
+   "name": "roles/php/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a0943dfc6dccf228a9135855d529853ce191c7bd6ae10a8a4f051ff1c13ecda8",
+   "format": 1
+  },
+  {
+   "name": "roles/php/tasks/install-from-source.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dfd3b7b138a9064ecb9ac6b1eaced3ae677ca50f5e3fcb003101e45ab977b1f1",
+   "format": 1
+  },
+  {
+   "name": "roles/php/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0d0705a4d80c4928c731558b32fb68f99e6194462ce30223dff02e964c664000",
+   "format": 1
+  },
+  {
+   "name": "roles/php/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9675e60c5007322666c810a8dec05e24ed46638d01a04e8b652abdc70436a9ea",
+   "format": 1
+  },
+  {
+   "name": "roles/php/molecule/default/playbook-source.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2629ac585477481814510632bb9928d0d05bf082a3ae3e8dd4d20c6370947dce",
+   "format": 1
+  },
+  {
+   "name": "roles/php/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6089daa69f9411102ffc1051456220805f80352a12c8f9e6ce5d995fcd896441",
+   "format": 1
+  },
+  {
+   "name": "roles/php/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "866f721ced5f0fe97bdb1dbe938f36360ddd2b3352be39c5b9553f61304455ef",
+   "format": 1
+  },
+  {
+   "name": "roles/php/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/templates/www.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fea380e26051850a86f2803fac1d73515730bf4009f953e75a13268cfb158453",
+   "format": 1
+  },
+  {
+   "name": "roles/php/templates/opcache.ini.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1d6f5ee9c32b422dc528558a919d29368697c5b735ef3f83996b0971c682dcac",
+   "format": 1
+  },
+  {
+   "name": "roles/php/templates/php.ini.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ec729a9135977a2b2471b911d0e5c9668265693b8971f566109e30200fc09b9",
+   "format": 1
+  },
+  {
+   "name": "roles/php/templates/apc.ini.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3de53f2e5b424c608def053d12124b60dc83d9d4440ad4fcb260f72d4832cd4",
+   "format": 1
+  },
+  {
+   "name": "roles/php/templates/fpm-init.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7892b03e99f02694ee6ea8baca78efc27cd15038aaa4ca1af9668e51f250abff",
+   "format": 1
+  },
+  {
+   "name": "roles/php/templates/php-fpm.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a635d4208de4efa8204b5e71bc3570dd5a7c490dd1f46d4ac789bd0aaa80499b",
+   "format": 1
+  },
+  {
+   "name": "roles/php/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "10b7fce7d458fa4ad191f6268fd8be1f165f3025fb441c6cda8c58220335ae34",
+   "format": 1
+  },
+  {
+   "name": "roles/php/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f84bde978e073209c6a0c06c460876c3a899d408d6951290fd18603ebd69d7d",
+   "format": 1
+  },
+  {
+   "name": "roles/php/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/vars/Ubuntu-16.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ec3f7b72d09942c403804d6d2eb8dda245b90cd093b6910f12df8fc99ac3190",
+   "format": 1
+  },
+  {
+   "name": "roles/php/vars/Debian-9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ec3f7b72d09942c403804d6d2eb8dda245b90cd093b6910f12df8fc99ac3190",
+   "format": 1
+  },
+  {
+   "name": "roles/php/vars/Debian-10.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fa73476d4edd77ea0d681a949cb02211f59fbeac4031c3a88439d05e8d203746",
+   "format": 1
+  },
+  {
+   "name": "roles/php/vars/Ubuntu-18.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "65800bb0d3c3dd8f047a076e20d1e01400b16ba355d33bfc4d8a16f11b42aac0",
+   "format": 1
+  },
+  {
+   "name": "roles/php/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "17d82a16f0e715b37e712860a67721e83c9ecd41e02794fe1360e6ce207e3140",
+   "format": 1
+  },
+  {
+   "name": "roles/php/vars/Ubuntu-20.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e1066f238b4bcb384ff69b0dfdc56113c3b93de7c36d999e61a3175179ba7cc5",
+   "format": 1
+  },
+  {
+   "name": "roles/php/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fc37976cdb6317642db48b74e65839cab60744ae984b8cd34e69bf2ddbf33ab2",
+   "format": 1
+  },
+  {
+   "name": "roles/php/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c0ce7495f539549e2346ddb40596666fb9e1a0aaa750d0b8af7e0db51042ce6",
+   "format": 1
+  },
+  {
+   "name": "roles/php/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4ef431b9c27c8e4f11a3cb2df911a6e38f15fbbddab6fdef054fdf3b73146a79",
+   "format": 1
+  },
+  {
+   "name": "roles/php/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fa4ea3ce7b23989d14ea0ab7da3c710847ff60915234ce3eb8f649fa6b8ce763",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ca5ccc2b1e2c3f7c0ddb82ff2c2e2de7d467397bb6377eb1b39f4af87982926",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1d40c027a3147237521f57ce5c9172ef03039ae48def40ad5bb5fa8e703580fc",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae411b5936b0cb67cd9daf81dd1cbe2d0b77543054b5f60788e97c5205c8982e",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "65f22688408ca89bdf980bbae619b8cd80c54191b6c3520e7851f6e4a713640e",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5fd810f50a30cf8084873f5fee2df695437d5f8d28a893f9a94afaff08173458",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cba790ac63c816757f1884b7730e6f613adb85d25dd4e6dfb1c4295354080636",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "641f782481dfa0627c665959b062cecbc1002d415c7e5ee0c14b0a188c1f8eb0",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/vars/Debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e8e5ddf13be398877f061888f58a1978094d1c76f92710f218065ded7ca2e0e7",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/vars/RedHat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5bd6bf729ffd0bfcb0503352be0d8df1f868cb3e522dda356a36e5efc7c2cbd3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d440650d393f3ed0dcdfbfffb1ae7c6781d8e385cffdeabea2f6f231d35c08c",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5440985875a3d5e31203458fe375fdbd45b3822c7518078bd326e1fa436b4254",
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_mysql/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff8ed621b1779985964271c2664bac48ecdd69d8a0239a3bfac0d796320c2ee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ca5ccc2b1e2c3f7c0ddb82ff2c2e2de7d467397bb6377eb1b39f4af87982926",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "39b6e3caabd3464da2df98c703f74c9932eb50b34e5683ad5b07d20446d83a42",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/.github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/.github/stale.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cc3fcc887d4929ca0421ca13bbb31d03b2c502e41a913d18158bffbee9f7bee",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/.github/FUNDING.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79668fbcce7748a95cecebf6f35cfc297d5ffb733aff93c4d82164ee8e967504",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8ddd6827ce42ab13c96c218d691458fa79c372bd1f570e29248b151e0f53d71",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8497a8b218392b736b1c3b671448d9574b5e1d900af29aa6a426b4015a89c8b5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/molecule/default/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a957a37b91449682f69685c5619b8537b92205602c881e75eeb8d973dad03fbc",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f58afe700f8f15872321cd64b8776cfef0316ae09eba7cb83ebbb5e02e186ff5",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "515a0e077dd4e6f58a53b676d5f30c91321197f1f8de671d5ef74760abcbd1a3",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ebc469779ec656fae655bcf297989ea327b2eb317221a8d94df96a033af9aa77",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ad3931a132f7b0f0b68b3bac16035d2d2f4b4c9b8b5d037b5ad3666cfaaa2f5f",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/.git",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9db8bdb6348b0caf2682cc421a4f0002822864ff1b1723ad7730127617d94543",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff188fd2c8a8fc857055144751406b7733429ac82aa14e8dd4898b5703bd881",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5440985875a3d5e31203458fe375fdbd45b3822c7518078bd326e1fa436b4254",
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/php_pear/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e10329ec886e754df848b17db3808c5918e09f62ef5cfba797a987d7beee0eb",
+   "format": 1
+  },
+  {
+   "name": ".gitmodules",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "284690e3ada6985b6b2663286fbeb1c8856bc55505b61c4e2cd9911fee5e2fd0",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

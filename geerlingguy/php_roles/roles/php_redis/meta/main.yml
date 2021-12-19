@@ -1,0 +1,31 @@
+---
+dependencies:
+  - geerlingguy.php
+
+galaxy_info:
+  # See: https://github.com/ansible/galaxy/issues/2393
+  # role_name: php-redis
+  author: geerlingguy
+  description: PhpRedis support for Linux
+  company: "Midwestern Mac, LLC"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - database
+    - web
+    - php
+    - redis
+    - cache
+    - performance
+    - kv
