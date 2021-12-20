@@ -1,0 +1,15 @@
+- name:  Vault SSH Helper | {{ansible_distribution}} Linux {{ansible_distribution_major_version}} {{ansible_architecture}} | Install Vault SSH Helper
+  include_tasks: "{{ ansible_local_parameters.general.ami_linux1 }}" 
+  when:
+    - ansible_distribution_major_version == '1'
+    
+- name:  Vault SSH Helper | {{ansible_distribution}} Linux {{ansible_distribution_major_version}} {{ansible_architecture}} | Install Vault SSH Helper
+  include_tasks: "{{ ansible_local_parameters.general.ami_linux2x86 }}"  
+  when:
+    - ansible_distribution_major_version == '2'
+    - ansible_architecture == 'x86_64'
+- name:  Vault SSH Helper | {{ansible_distribution}} Linux {{ansible_distribution_major_version}} {{ansible_architecture}} | Install Vault SSH Helper
+  include_tasks: "{{ ansible_local_parameters.general.ami_linux2x64 }}"
+  when:
+    - ansible_distribution_major_version == '2'
+    - ansible_architecture != 'x86_64'

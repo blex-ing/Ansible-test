@@ -1,0 +1,14 @@
+- name:  Vault SSH Helper | {{ansible_distribution}} Linux {{ansible_distribution_major_version}} {{ansible_architecture}} | Install Vault SSH Helper
+  include_tasks: "{{ ansible_local_parameters.general.centos8 }}"
+  when:
+    - ansible_distribution_major_version == '8'
+    
+- name:  Vault SSH Helper | {{ansible_distribution}} Linux {{ansible_distribution_major_version}} {{ansible_architecture}} | Install Vault SSH Helper
+  include_tasks: "{{ ansible_local_parameters.general.centos7 }}"  
+  when:
+    - ansible_distribution_major_version == '7'
+
+- name:  Vault SSH Helper | {{ansible_distribution}} Linux {{ansible_distribution_major_version}} {{ansible_architecture}} | Install Vault SSH Helper
+  include_tasks: "{{ ansible_local_parameters.general.centos6 }}"
+  when:
+    - ansible_distribution_major_version == '6'

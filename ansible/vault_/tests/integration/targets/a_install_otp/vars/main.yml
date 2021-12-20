@@ -1,0 +1,10 @@
+---
+ansible_local_parameters: "{{ lookup('file', 'tasks/parameters/parameters_install.json') }}"
+vault_addr: https://176.34.72.180:8200/
+tls_skip_verify: 'false'
+#ca_cert = "{{ ansible_local_parameters.ubuntu.ubuntu_vault_cert_hc_dev }}"'
+ssh_mount_point: "18/AWS/EU-WEST-1/4349834/DEV/OTP"
+allowed_roles: "*"
+allowed_cidr_list: "0.0.0.0/0"
+
+#docker run --detach --volume /sys/fs/cgroup:/sys/fs/cgroup:ro --privileged=false --security-opt seccomp=unconfined --volume /va ...

@@ -1,0 +1,175 @@
+- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 0.0 Check if Vault SSH Helper is Uninstall
+  stat:
+    path:  "{{ansible_local_parameters.suse.suse_ssh_helper}}"
+  register: verify_config_vault_ssh
+
+#remove and uninstall packages unzip
+# - name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 1.0 Check if Unzip deb package exists in temporary file
+#   stat:
+#     path: /tmp/unzip_6.0-21ubuntu1_amd64.deb
+#   register: unzip_stat
+#   when:
+#     - verify_config_vault_ssh.stat.exists
+
+# - name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 1.1 Delete Unzip deb package of temporary file
+#   file:
+#     path: /tmp/unzip_6.0-21ubuntu1_amd64.deb
+#     state: absent
+#   when: unzip_stat.stat is defined and unzip_stat.stat.exists
+
+# - name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 2.0 Check if Unzip is installed
+#   stat:
+#     path: /usr/bin/unzip
+#   register: unzip_status
+#   when:
+#     - verify_config_vault_ssh.stat.exists
+
+# - name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 2.1 Uninstall Unzip 
+#   yum:
+#     name:  unzip
+#     state: absent
+#   when:
+#     - unzip_status.stat is defined and unzip_status.stat.exists
+
+#remove vault ssh package
+- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 3.0 Check if Vault SSH Helper zip package exists in temporary file /tmp/
+  stat:
+    path: "{{ansible_local_parameters.suse.suse_zip_package}}"
+  register: vault_ssh_stat
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 3.1 Delete Vault SSH Helper zip package of temporary file /tmp/
+  file:
+    path: "{{ansible_local_parameters.suse.suse_zip_package}}"
+    state: absent
+  when: vault_ssh_stat.stat is defined and vault_ssh_stat.stat.exists
+
+#uninstal vault ssh package
+- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 4.0 Check if Vault SSH Helper is already installed in /usr/local/bin/
+  stat:
+    path:  "{{ansible_local_parameters.suse.suse_ssh_installed}}"
+  register: vault_ssh_already_installed
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 4.1 Uninstall Vault SSH Helper of /usr/local/bin/vault-ssh-helper
+  file:
+    path: "{{ansible_local_parameters.suse.suse_ssh_installed}}"
+    state: absent
+  when: 
+    - vault_ssh_already_installed.stat is defined and vault_ssh_already_installed.stat.exists
+
+# remove path: /etc/vault-ssh-helper.d/ 
+- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 5.0 Check if directory /etc/vault-ssh-helper.d exists
+  stat:
+    path:  "{{ansible_local_parameters.suse.suse_ssh_helperd}}"
+  register: vault_directory
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+#- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 5.1 Delete directory /etc/vault-ssh-helper.d
+ # file:
+  #  path: "{{ansible_local_parameters.suse.suse_ssh_helperd}}"
+   # state: absent
+  #when: 
+   # - vault_directory.stat is defined and vault_directory.stat.exists
+
+#remove path: /etc/pam.d/sshd
+- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 5.2 Check if file /etc/pam.d/sshd exists
+  stat:
+    path:  "{{ansible_local_parameters.suse.suse_sshd_file}}"
+  register: vault_sshd
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+# #- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 6.0 Delete file /etc/pam.d/sshd
+#  # file:
+#   #  path: "{{ansible_local_parameters.suse.suse_sshd_file}}"
+#    # state: absent
+#  # when: vault_sshd.stat is defined and vault_sshd.stat.exists #and vault_directory.stat.exists
+
+# #remove path: /etc/pam.d/sshd.orig
+# - name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 7.0 Check if directory /etc/pam.d/sshd.orig exists and set default values
+#   stat:
+#     path:  "{{ansible_local_parameters.suse.suse_sshd_file_copy}}"
+#   register: vault_sshd_orig
+#   when:
+#     - verify_config_vault_ssh.stat.exists
+
+# - name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 7.1 Backup the original configuration file /etc/pam.d/sshd.orig
+#   command: cp "{{ansible_local_parameters.suse.suse_sshd_file_copy}}" "{{ansible_local_parameters.suse.suse_sshd_file}}"
+#   when: vault_sshd_orig.stat is defined and vault_sshd_orig.stat.exists #and vault_directory.stat.exists
+
+# #- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 7.2 Delete file /etc/pam.d/sshd.orig
+#  # file:
+#   #  path: "{{ansible_local_parameters.suse.suse_sshd_file_copy}}"
+#    # state: absent
+#  # when: vault_sshd_orig.stat is defined and vault_sshd_orig.stat.exists #and vault_directory.stat.exists
+
+# #remove path: /etc/ssh/sshd_config
+# - name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 8.0 Check if file /etc/ssh/sshd_config exists
+#   stat:
+#     path:  "{{ansible_local_parameters.suse.suse_sshd_file_config}}"
+#   register: vault_sshd_config
+#   when:
+#     - verify_config_vault_ssh.stat.exists
+
+# #- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 8.1 Delete file /etc/ssh/sshd_config
+#  # file:
+#   #  path: "{{ansible_local_parameters.suse.suse_sshd_file_config}}"
+#    # state: absent
+#  # when: vault_sshd_config.stat is defined and vault_sshd_config.stat.exists #and vault_directory.stat.exists
+
+# #remove path: /etc/ssh/sshd_config.orig
+# - name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 9.0 Check if directory /etc/ssh/sshd_config.orig exists and set default values
+#   stat:
+#     path: "{{ansible_local_parameters.suse.suse_sshd_file_config_copy}}"
+#   register: vault_sshd_config_orig
+#   when:
+#     - verify_config_vault_ssh.stat.exists
+
+# - name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 9.1 Backup the original configuration file /etc/ssh/sshd_config.orig
+#   command: cp "{{ansible_local_parameters.suse.suse_sshd_file_config_copy}}" "{{ansible_local_parameters.suse.suse_sshd_file_config}}"
+#   when: vault_sshd_config_orig.stat is defined and vault_sshd_config_orig.stat.exists #and vault_directory.stat.exists
+
+#- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 9.2 Delete file /etc/ssh/sshd_config.orig
+ # file:
+  #  path: "{{ansible_local_parameters.suse.suse_sshd_file_config_copy}}"
+   # state: absent
+ # when: vault_sshd_config_orig.stat is defined and vault_sshd_config_orig.stat.exists #and vault_directory.stat.exists
+
+# modify /etc/pam.d/sshd
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 5.2.1 Delete lines in /etc/pam.d/sshd
+  lineinfile:
+    path: "{{ ansible_local_parameters.suse.suse_sshd_file}}"
+    regexp: "{{ ansible_local_parameters.suse.suse_line_1 }}"
+    state: absent
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 5.2.2 Delete lines in /etc/pam.d/sshd
+  lineinfile:
+    path: "{{ ansible_local_parameters.suse.suse_sshd_file}}"
+    regexp: "{{ ansible_local_parameters.suse.suse_line_2 }}"
+    state: absent
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 5.3 Uncomment line in /etc/pam.d/sshd
+  lineinfile: 
+    state=present
+    dest="{{ ansible_local_parameters.suse.suse_sshd_file}}"
+    regexp='^#?auth        include     common-auth'
+    line='auth        include     common-auth'
+
+#remove certificate
+- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 10.0 check if the certificate exists in remote host /etc/ssl/certs/
+  stat:
+    path: "{{ansible_local_parameters.suse.suse_cert}}"
+  register: vault_certs
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_os_family}} {{ansible_distribution_major_version}} | 10.1 Delete certificate exists in remote host /etc/ssl/certs/
+  file:
+    path: "{{ansible_local_parameters.suse.suse_cert}}"
+    state: absent
+  when: vault_certs.stat is defined and vault_certs.stat.exists

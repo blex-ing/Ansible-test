@@ -1,0 +1,127 @@
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 0.0 Check if Vault SSH Helper is Uninstall
+  stat:
+    path:  /etc/vault-ssh-helper.d
+  register: verify_config_vault_ssh
+
+#remove vault ssh package
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 3.0 Check if Vault SSH Helper zip package exists in temporary file /tmp/
+  stat:
+    path: /tmp/vault-ssh-helper_0.2.0_linux_amd64.zip
+  register: vault_ssh_stat
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 3.1 Delete Vault SSH Helper zip package of temporary file /tmp/
+  file:
+    path: /tmp/vault-ssh-helper_0.2.0_linux_amd64.zip
+    state: absent
+  when: vault_ssh_stat.stat is defined and vault_ssh_stat.stat.exists
+
+#uninstal vault ssh package
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 4.0 Check if Vault SSH Helper is already installed in /usr/local/bin/
+  stat:
+    path:  /usr/local/bin/vault-ssh-helper
+  register: vault_ssh_already_installed
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 4.1 Uninstall Vault SSH Helper of /usr/local/bin/vault-ssh-helper
+  file:
+    path: /usr/local/bin/vault-ssh-helper
+    state: absent
+  when: 
+    - vault_ssh_already_installed.stat is defined and vault_ssh_already_installed.stat.exists
+
+# remove path: /etc/vault-ssh-helper.d/ 
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 5.0 Check if directory /etc/vault-ssh-helper.d exists
+  stat:
+    path:  /etc/vault-ssh-helper.d
+  register: vault_directory
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 5.1 Delete directory /etc/vault-ssh-helper.d
+  file:
+    path: /etc/vault-ssh-helper.d
+    state: absent
+  when: 
+    - vault_directory.stat is defined and vault_directory.stat.exists
+
+#remove path: /etc/pam.d/sshd
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 6.0 Check if file /etc/pam.d/sshd exists
+  stat:
+    path:  /etc/pam.d/sshd
+  register: vault_sshd
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 6.1 Delete file /etc/pam.d/sshd
+  file:
+    path: /etc/pam.d/sshd
+    state: absent
+  when: vault_sshd.stat is defined and vault_sshd.stat.exists #and vault_directory.stat.exists
+
+#remove path: /etc/pam.d/sshd.orig
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 7.0 Check if directory /etc/pam.d/sshd.orig exists and set default values
+  stat:
+    path:  /etc/pam.d/sshd.orig
+  register: vault_sshd_orig
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 7.1 Backup the original configuration file /etc/pam.d/sshd.orig
+  command: cp /etc/pam.d/sshd.orig /etc/pam.d/sshd
+  when: vault_sshd_orig.stat is defined and vault_sshd_orig.stat.exists #and vault_directory.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 7.2 Delete file /etc/pam.d/sshd.orig
+  file:
+    path: /etc/pam.d/sshd.orig
+    state: absent
+  when: vault_sshd_orig.stat is defined and vault_sshd_orig.stat.exists #and vault_directory.stat.exists
+
+#remove path: /etc/ssh/sshd_config
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 8.0 Check if file /etc/ssh/sshd_config exists
+  stat:
+    path:  /etc/ssh/sshd_config
+  register: vault_sshd_config
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 8.1 Delete file /etc/ssh/sshd_config
+  file:
+    path: /etc/ssh/sshd_config
+    state: absent
+  when: vault_sshd_config.stat is defined and vault_sshd_config.stat.exists #and vault_directory.stat.exists
+
+#remove path: /etc/ssh/sshd_config.orig
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 9.0 Check if directory /etc/ssh/sshd_config.orig exists and set default values
+  stat:
+    path: /etc/ssh/sshd_config.orig
+  register: vault_sshd_config_orig
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 9.1 Backup the original configuration file /etc/ssh/sshd_config.orig
+  command: cp /etc/ssh/sshd_config.orig /etc/ssh/sshd_config
+  when: vault_sshd_config_orig.stat is defined and vault_sshd_config_orig.stat.exists #and vault_directory.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 9.2 Delete file /etc/ssh/sshd_config.orig
+  file:
+    path: /etc/ssh/sshd_config.orig
+    state: absent
+  when: vault_sshd_config_orig.stat is defined and vault_sshd_config_orig.stat.exists #and vault_directory.stat.exists
+
+#remove certificate
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 10.0 check if the certificate exists in remote host /etc/ssl/certs/
+  stat:
+    path: /etc/ssl/certs/vault_portal.crt
+  register: vault_certs
+  when:
+    - verify_config_vault_ssh.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rollback 10.1 Delete certificate exists in remote host /etc/ssl/certs/
+  file:
+    path: /etc/ssl/certs/vault_portal.crt
+    state: absent
+  when: vault_certs.stat is defined and vault_certs.stat.exists
+
