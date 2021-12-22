@@ -1,0 +1,113 @@
+{
+        "ami_linux": {
+                "ami_linux_ssh_helper": "/etc/vault-ssh-helper.d",
+                "ami_linux_ssh_helperd": "/etc/vault-ssh-helper.d",
+                "ami_linux_zip_package": "/tmp/vault-ssh-helper_0.2.0_linux_amd64.zip",
+                "ami_linux_ssh_installed": "/usr/local/bin/vault-ssh-helper",
+                "ami_linux_sshd_file": "/etc/pam.d/sshd",
+                "ami_linux_sshd_file_copy": "/etc/pam.d/sshd.orig",
+                "ami_linux_sshd_file_config": "/etc/ssh/sshd_config",
+                "ami_linux_sshd_file_config_copy": "/etc/ssh/sshd_config.orig",
+                "ami_linux_log": "/var/log/vault-ssh.log",
+                "ami_linux_vault_ssh": "/usr/local/bin/vault-ssh-helper",
+                "ami_linux_config_hcl": "/etc/vault-ssh-helper.d/config.hcl",
+                "ami_linux_cert": "/etc/ssl/certs/vault_portal_176.crt",
+                "ami_linux_line_1": "auth optional pam_unix.so not_set_pass use_first_pass nodelay",
+                "ami_linux_line_2": "vault-ssh-helper"
+        },
+
+        "debian":{
+                "debian_ssh_helper": "/etc/vault-ssh-helper.d",
+                "debian_ssh_helperd": "/etc/vault-ssh-helper.d",
+                "debian_zip_package": "/tmp/vault-ssh-helper_0.2.0_linux_amd64.zip",
+                "debian_ssh_installed": "/usr/local/bin/vault-ssh-helper",
+                "debian_sshd_file": "/etc/pam.d/sshd",
+                "debian_sshd_file_copy": "/etc/pam.d/sshd.orig",
+                "debian_sshd_file_config": "/etc/ssh/sshd_config",
+                "debian_sshd_file_config_copy": "/etc/ssh/sshd_config.orig",
+                "debian_log": "/var/log/vault-ssh.log",
+                "debian_vault_ssh": "/usr/local/bin/vault-ssh-helper",
+                "debian_config_hcl": "/etc/vault-ssh-helper.d/config.hcl",
+                "debian_cert": "/etc/ssl/certs/vault_portal.crt",
+                "debian_line_1": "auth optional pam_unix.so not_set_pass use_first_pass nodelay",
+                "debian_line_2": "vault-ssh-helper"
+        },
+
+        "ubuntu":{
+                "ubuntu_ssh_helper": "/etc/vault-ssh-helper.d",
+                "ubuntu_ssh_helperd": "/etc/vault-ssh-helper.d",
+                "ubuntu_zip_package": "/tmp/vault-ssh-helper_0.2.0_linux_amd64.zip",
+                "ubuntu_ssh_installed": "/usr/local/bin/vault-ssh-helper",
+                "ubuntu_sshd_file": "/etc/pam.d/sshd",
+                "ubuntu_sshd_file_copy": "/etc/pam.d/sshd.orig",
+                "ubuntu_sshd_file_config": "/etc/ssh/sshd_config",
+                "ubuntu_sshd_file_config_copy": "/etc/ssh/sshd_config.orig",
+                "ubuntu_log": "/var/log/vault-ssh.log",
+                "ubuntu_vault_ssh": "/usr/local/bin/vault-ssh-helper",
+                "ubuntu_config_hcl": "/etc/vault-ssh-helper.d/config.hcl",
+                "ubuntu_cert": "/etc/ssl/certs/vault_portal.crt",
+                "ubuntu_line_1": "auth optional pam_unix.so not_set_pass use_first_pass nodelay",
+                "ubuntu_line_2": "vault-ssh-helper"
+        },
+
+        "redhat":{
+                "redhat_ssh_helper": "/etc/vault-ssh-helper.d",
+                "redhat_ssh_helperd": "/etc/vault-ssh-helper.d",
+                "redhat_zip_package": "/tmp/vault-ssh-helper_0.2.0_linux_amd64.zip",
+                "redhat_ssh_installed": "/usr/local/bin/vault-ssh-helper",
+                "redhat_sshd_file": "/etc/pam.d/sshd",
+                "redhat_sshd_file_copy": "/etc/pam.d/sshd.orig",
+                "redhat_sshd_file_config": "/etc/ssh/sshd_config",
+                "redhat_sshd_file_config_copy": "/etc/ssh/sshd_config.orig",
+                "redhat_log": "/var/log/vault-ssh.log",
+                "redhat_vault_ssh": "/usr/local/bin/vault-ssh-helper",
+                "redhat_config_hcl": "/etc/vault-ssh-helper.d/config.hcl",
+                "redhat_cert": "/etc/ssl/certs/vault_portal.crt",
+                "redhat_line_1": "auth optional pam_unix.so not_set_pass use_first_pass nodelay",
+                "redhat_line_2": "vault-ssh-helper"
+        },
+
+        "centos":{
+                "centos_ssh_helper": "/etc/vault-ssh-helper.d",
+                "centos_ssh_helperd": "/etc/vault-ssh-helper.d",
+                "centos_zip_package": "/tmp/vault-ssh-helper_0.2.0_linux_amd64.zip",
+                "centos_ssh_installed": "/usr/local/bin/vault-ssh-helper",
+                "centos_sshd_file": "/etc/pam.d/sshd",
+                "centos_sshd_file_copy": "/etc/pam.d/sshd.orig",
+                "centos_sshd_file_config": "/etc/ssh/sshd_config",
+                "centos_sshd_file_config_copy": "/etc/ssh/sshd_config.orig",
+                "centos_log": "/var/log/vault-ssh.log",
+                "centos_vault_ssh": "/usr/local/bin/vault-ssh-helper",
+                "centos_config_hcl": "/etc/vault-ssh-helper.d/config.hcl",
+                "centos_cert": "/etc/ssl/certs/vault_portal.crt",
+                "centos_line_1": "auth       optional       pam_unix.so not_set_pass use_first_pass nodelay",
+                "centos_line_2": "vault-ssh-helper"
+        },
+
+        "suse":{
+                "suse_ssh_helper": "/etc/vault-ssh-helper.d",
+                "suse_ssh_helperd": "/etc/vault-ssh-helper.d",
+                "suse_zip_package": "/tmp/vault-ssh-helper_0.2.0_linux_amd64.zip",
+                "suse_ssh_installed": "/usr/local/bin/vault-ssh-helper",
+                "suse_sshd_file": "/etc/pam.d/sshd",
+                "suse_sshd_file_copy": "/etc/pam.d/sshd.orig",
+                "suse_sshd_file_config": "/etc/ssh/sshd_config",
+                "suse_sshd_file_config_copy": "/etc/ssh/sshd_config.orig",
+                "suse_log": "/var/log/vault-ssh.log",
+                "suse_vault_ssh": "/usr/local/bin/vault-ssh-helper",
+                "suse_config_hcl": "/etc/vault-ssh-helper.d/config.hcl",
+                "suse_cert": "/etc/ssl/certs/vault_portal.crt",
+                "suse_line_1": "auth optional pam_unix.so not_set_pass use_first_pass nodelay",
+                "suse_line_2": "vault-ssh-helper"
+        },
+
+        "general": {
+                "ami_linux": "./os/ami_linux/uninstall_vault_ssh_amazon_linux.yml",
+                "debian": "./os/debian/uninstall_vault_ssh_debian.yml",
+                "ubuntu": "./os/ubuntu/uninstall_vault_ssh_ubuntu.yml",
+                "redhat": "./os/redhat/uninstall_vault_ssh_redhat.yml",
+                "centos": "./os/centos/uninstall_vault_ssh_centos.yml",
+                "oracle": "./os/oracle/uninstall_vault_ssh_oracle.yml",
+                "suse": "./os/suse/uninstall_vault_ssh_suse.yml"
+        }
+}

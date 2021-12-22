@@ -1,0 +1,131 @@
+---
+
+- name:
+  hosts: localhost
+  gather_facts: true
+  vars:
+    ansible_local_parameters: "{{ lookup('file', './parameters/parameters_install.json') }}"
+    vault_addr: https://176.34.72.180:8200/
+    tls_skip_verify: 'false'
+    #ca_cert = "{{ ansible_local_parameters.ubuntu.ubuntu_vault_cert_hc_dev }}"'
+    ssh_mount_point: "18/AWS/EU-WEST-1/4349834/DEV/OTP"
+    allowed_roles: "*"
+    allowed_cidr_list: "0.0.0.0/0"
+
+  tasks:
+
+
+    # AMAZON LINUX BLOCK  --
+
+    - name: Vault SSH Helper | Amazon Linux {{ansible_distribution_major_version}} | Install Vault SSH Helper
+      include_tasks: "{{ ansible_local_parameters.general_father.ami_linux_general }}"
+      when:
+        - ansible_distribution_major_version in ['2', '1']
+        - ansible_distribution | lower == 'amazon'
+
+    - name: Vault SSH Helper | OS Amazon Linux {{ansible_distribution_major_version}} not contemplated
+      debug:
+        msg: "Version Amazon Linux {{ansible_distribution_major_version}} not covered,  Amazon Linux versions covered: 2 | 1 
+              If it is a new version contact the administrator"
+      when:
+        - ansible_distribution_major_version not in ['2', '1']
+        - ansible_distribution | lower == 'amazon'
+
+    # DEBIAN BLOCK ++
+    - name: Vault SSH Helper | Debian {{ansible_distribution_major_version}} | Install Vault SSH Helper
+      include_tasks: "{{ ansible_local_parameters.general_father.debian_general }}"
+      when:
+        - ansible_distribution_major_version in ['9','10']
+        - ansible_distribution | lower == 'debian'
+
+    - name: Vault SSH Helper | OS Debian {{ansible_distribution_major_version}} not contemplated
+      debug:
+        msg: "Version Debian {{ansible_distribution_major_version}} not covered, Debian versions covered: 9 | 10 
+              If it is a new version contact the administrator"
+      when:
+        - ansible_distribution_major_version not in ['9','10']
+        - ansible_distribution | lower == 'debian'
+    #UBUNTU BLOCK ++
+    - name: Vault SSH Helper | Ubuntu {{ansible_distribution_major_version}} | Install Vault SSH Helper
+      include_tasks: "{{ ansible_local_parameters.general_father.ubuntu_general }}"
+      when:
+        - ansible_distribution_major_version in ['14','16','18','20']
+        - ansible_distribution | lower == 'ubuntu'
+
+    - name: Vault SSH Helper | OS Ubuntu {{ansible_distribution_major_version}} not contemplated
+      debug:
+        msg: "Version Ubuntu {{ansible_distribution_major_version}} not covered, Ubuntu versions covered: 20 | 18 | 16 | 14  
+              If it is a new version contact the administrator"
+      when:
+        - ansible_distribution_major_version not in ['14','16','18','20']
+        - ansible_distribution | lower == 'ubuntu'
+    
+    # REDHAT BLOCK --
+    - name: Vault SSH Helper | RedHat {{ansible_distribution_major_version}} | Install Vault SSH Helper
+      include_tasks: "{{ ansible_local_parameters.general_father.redhat_general }}"
+      when:
+        - ansible_distribution_major_version in ['8','7','6']
+        - ansible_distribution | lower == 'redhat'
+    
+    - name: Vault SSH Helper | OS RedHat {{ansible_distribution_major_version}} not contemplated
+      debug:
+        msg: "Version RedHat {{ansible_distribution_major_version}} not covered, RedHat versions covered: 8 | 7 | 6 
+              If it is a new version contact the administrator"
+      when:
+        - ansible_distribution_major_version not in ['8','7','6']
+        - ansible_distribution | lower == 'redhat'
+    
+    # CentOS BLOCK --
+    - name: Vault SSH Helper | CentOS {{ansible_distribution_major_version}} | Install Vault SSH Helper
+      include_tasks: "{{ ansible_local_parameters.general_father.centos_general }}"
+      when:
+        - ansible_distribution_major_version in ['8','7','6']
+        - ansible_distribution | lower == 'centos'
+    
+    - name: Vault SSH Helper | OS Centos {{ansible_distribution_major_version}} not contemplated
+      debug:
+        msg: "Version Centos {{ansible_distribution_major_version}} not covered, Centos versions covered: 8 | 7 | 6 
+              If it is a new version contact the administrator"
+      when:
+        - ansible_distribution_major_version not in ['8','7','6']
+        - ansible_distribution | lower == 'centos'
+
+    # Oracle BLOCK --
+    # - name: Vault SSH Helper | Oracle {{ansible_distribution_major_version}} | Install Vault SSH Helper
+    #   include_tasks: "./os/ "
+    #   when:
+    #     - ansible_distribution_major_version in ['8','7','6']
+    #     - ansible_distribution | lower == 'oracle'
+    
+    # - name: Vault SSH Helper | OS Oracle {{ansible_distribution_major_version}} not contemplated
+    #   debug:
+    #     msg: "Version Oracle {{ansible_distribution_major_version}} not covered, Oracle versions covered: 8 | 7 | 6 
+    #           If it is a new version contact the administrator"
+    #   when:
+    #     - ansible_distribution_major_version not in ['8','7','6']
+    #     - ansible_distribution | lower == 'oracle'
+
+    #SUSE BLOCK **
+
+    - name: Vault SSH Helper | Suse {{ansible_distribution_major_version}} | Install Vault SSH Helper
+      include_tasks: "{{ ansible_local_parameters.general_father.suse_general }}"
+      when:
+        - ansible_distribution_major_version in ['11', '12', '15']
+        - ansible_os_family | lower == 'suse'
+    
+    - name: Vault SSH Helper | OS Suse {{ansible_distribution_major_version}} not contemplated
+      debug:
+        msg: "Version Suse {{ansible_distribution_major_version}} not covered, Suse versions covered: 15 | 12 | 11 
+              If it is a new version contact the administrator"
+      when:
+        - ansible_distribution_major_version not in ['11', '12', '15']
+        - ansible_os_family | lower == 'suse'
+          
+    # DISTRIBUTION NOT CONTEMPLED
+
+    - name: Vault SSH Helper | OS {{ansible_distribution}}  {{ansible_distribution_major_version}} not contemplated
+      debug:
+        msg: "OS {{ansible_distribution}} {{ansible_distribution_major_version}} not contempled, 
+              If it is a new distribution contact the administrator"
+      when:
+        - ansible_distribution | lower not in ['amazon','redhat','ubuntu', 'debian','centos','sles']

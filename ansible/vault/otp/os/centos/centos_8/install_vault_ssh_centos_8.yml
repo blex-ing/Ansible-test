@@ -1,0 +1,334 @@
+# Check
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 1.0 Check if Vault SSH Helper is already installed
+  stat:
+    path:  "{{ ansible_local_parameters.centos8.centos8_ssh_helper }}"
+  register: vault_ssh_already_installed
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 1.1 Verify the configuration  Vault SSH Helper
+  command: /usr/local/bin/vault-ssh-helper -verify-only  -config "{{ ansible_local_parameters.centos8.centos8_create_configuration_file }}"
+  ignore_errors: true
+  when:
+    - vault_ssh_already_installed.stat.exists
+  register: verify_config_vault_ssh
+  
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 1.2 Print configuration status  Vault SSH Helper
+  debug:
+    msg: The configuration  Vault SSH Helper is Ok
+  when:
+    - verify_config_vault_ssh is succeeded 
+    - vault_ssh_already_installed.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 1.3 Print configuration status Vault SSH Helper
+  debug:
+    msg: Vault SSH Helper is not configured yet  {{verify_config_vault_ssh.msg}}
+  when:
+    - verify_config_vault_ssh.msg is defined and (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+    - vault_ssh_already_installed.stat.exists
+  
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 1.4 Print configuration status Vault SSH Helper
+  debug:
+    msg: Vault SSH Helper is not installed
+  when:
+  - not vault_ssh_already_installed.stat.exists
+
+#BLOCK UNZIP
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 2.0 Check if Unzip is install
+  stat:
+    path: "{{ ansible_local_parameters.centos8.centos8_unzip }}"
+  register: unzip_status
+  when:
+    - not vault_ssh_already_installed.stat.exists #when vault not isntalled
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 2.0.1 Print Unzip is install
+  debug:
+    msg: Unzip is installed
+  when:
+    - not vault_ssh_already_installed.stat.exists
+    - unzip_status.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 2.0.2 Check if Unzip rpm  is in remote path /tmp
+  stat:
+    path: "{{ ansible_local_parameters.centos8.centos8_unzip_remote }}"
+  register: unzip_rpm_status
+  when:
+    - not vault_ssh_already_installed.stat.exists
+
+# Copy Unzip in remote path
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 2.1 Copy Unzip rpm package in remote path /tmp
+  copy:
+    src: "{{ ansible_local_parameters.centos8.centos8_copy_remote_unzip }}"
+    dest: "{{ ansible_local_parameters.centos8.centos8_dest_helper_zip }}"
+    mode: '0755'
+  when: 
+    - (not vault_ssh_already_installed.stat.exists) and ( not unzip_status.stat.exists) and (not unzip_rpm_status.stat.exists)
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 2.2 Install Unzip in remote host
+  yum:
+    name: "{{ ansible_local_parameters.centos8.centos8_unzip_remote }}"
+    state: present
+    disable_gpg_check: true
+  when:
+    - not vault_ssh_already_installed.stat.exists
+    - not unzip_status.stat.exists
+
+#BLOCK VAULT SSH
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 3.0 Check if  Vault SSH Helper.zip is in remote host
+  stat:
+    path: "{{ ansible_local_parameters.centos8.centos8_unzip_host }}"
+  register: vault_zip_status
+  when:
+    - not vault_ssh_already_installed.stat.exists
+
+#Copy vault_ssh_helper in remote path
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 3.1 Copy Vault SSH Helper.zip a file in remote path /tmp
+  copy:
+    src: "{{ ansible_local_parameters.centos8.centos8_copy_remote_ssh_helper }}"
+    dest: "{{ ansible_local_parameters.centos8.centos8_dest_helper_zip }}"
+    mode: '0755'
+  when: 
+    - not vault_ssh_already_installed.stat.exists and not vault_zip_status.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 3.2 Install Vault SSH Helper.zip in remote path /usr/local/bin
+  unarchive:
+    src: "{{ ansible_local_parameters.centos8.centos8_unzip_host }}"
+    dest: "{{ ansible_local_parameters.centos8.centos8_ssh_helper_new_directory }}"
+    remote_src: yes
+  register: vault_ssh_installed
+  when:
+    - not vault_ssh_already_installed.stat.exists
+    - not vault_zip_status.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 4.0 Create directory (/etc/vault-ssh-helper.d) to store the configuration file
+  file: 
+    path: "{{ ansible_local_parameters.centos8.centos8_ssh_helper }}"
+    mode: '0755' 
+    state: directory
+  when:
+    - vault_ssh_installed.changed
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 4.1 Create file config.hcl in remote path  /etc/vault-ssh-helper.d/
+  file: 
+    path: "{{ ansible_local_parameters.centos8.centos8_create_configuration_file }}"
+    mode: '0755' 
+    state: touch
+  when:
+    - vault_ssh_installed.changed
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 4.2 Edit file config.hcl
+  lineinfile: 
+    dest: "{{ ansible_local_parameters.centos8.centos8_create_configuration_file }}"
+    line: '{{ item }}'
+  with_items:
+    - 'vault_addr = "{{vault_addr}}"'
+    - 'tls_skip_verify = {{tls_skip_verify}}'
+    - 'ca_cert = "{{ ansible_local_parameters.centos8.centos8_vault_cert_hc_dev }}"'
+    - 'ssh_mount_point = "{{ssh_mount_point}}"' 
+    - 'allowed_roles = "{{allowed_roles}}"'
+    - 'allowed_cidr_list = "{{allowed_cidr_list}}"'
+  when:
+    - vault_ssh_installed.changed  or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+#BLOCK PAM sshd configuration
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 5.0 Check if directory /etc/pam.d/sshd.orig exists
+  stat:
+    path:  "{{ ansible_local_parameters.centos8.centos8_pam_ssh_configuration }}"
+  register: vault_sshd_orig
+  when:
+    - vault_ssh_installed.changed  or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 5.1 Backuo of original configuration file /etc/pam.d/sshd
+  command: cp "{{ ansible_local_parameters.centos8.centos8_new_location_pam_ssh_configuration }}" "{{ ansible_local_parameters.centos8.centos8_pam_ssh_configuration }}"
+  when:
+    - vault_sshd_orig.stat is defined and not vault_sshd_orig.stat.exists
+    - vault_ssh_installed.changed or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 5.2 Commented out the standard Unix authentication /etc/pam.d/sshd
+  lineinfile:
+    path: "{{ ansible_local_parameters.centos8.centos8_new_location_pam_ssh_configuration }}"
+    regexp: '{{ item }}'
+    #insertafter: '#%PAM*'
+    line:  '#{{ item }}' 
+  with_items:
+    - 'auth       substack     password-auth'
+    - 'password   include      password-auth'
+  when:
+    - vault_ssh_installed.changed or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 5.3 Replaced with authentication through vault-ssh-helper /etc/pam.d/sshd
+  ansible.builtin.lineinfile:
+    path: "{{ ansible_local_parameters.centos8.centos8_new_location_pam_ssh_configuration }}"
+    #regexp: '#%PAM-1.0_'
+    insertafter: 'auth       include      postlogin'
+    line: '{{ item }}'
+  with_items:
+    - 'auth       optional       pam_unix.so not_set_pass use_first_pass nodelay'
+    - 'auth       requisite      pam_exec.so quiet expose_authtok log=/var/log/vault-ssh.log /usr/local/bin/vault-ssh-helper -config=/etc/vault-ssh-helper.d/config.hcl'
+    
+  when:
+    - vault_ssh_installed.changed or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+#BLOCK PAM: sshd configuration
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 6.0 Check if directory /etc/ssh/sshd_config.orig exists
+  stat:
+    path:  "{{ ansible_local_parameters.centos8.centos8_pam_configuration_backup }}"
+  register: vault_sshd_config_orig
+  when:
+    - vault_ssh_installed.changed  or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 6.1 Copy the original configuration file /etc/ssh/sshd_config
+  command: cp "{{ ansible_local_parameters.centos8.centos8_pam_configuration }}" "{{ ansible_local_parameters.centos8.centos8_pam_configuration_backup }}"
+  when:
+    - vault_sshd_config_orig.stat is defined and not vault_sshd_config_orig.stat.exists
+    - vault_ssh_installed.changed or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+    
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 6.2 Modify (comment) the sshd configuration file /etc/ssh/sshd_config
+  lineinfile:
+    path: "{{ ansible_local_parameters.centos8.centos8_pam_configuration }}"
+    regexp: '{{ item }}'
+    line:  '#{{ item }}' 
+  with_items:
+    - 'ChallengeResponseAuthentication no'
+    - 'UsePAM no'
+    - 'PasswordAuthentication yes'
+  when:
+    - vault_ssh_installed.changed or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 6.3 Modify (uncomment) the sshd configuration file /etc/ssh/sshd_config
+  ansible.builtin.lineinfile:
+    path: "{{ ansible_local_parameters.centos8.centos8_pam_configuration }}"
+    regexp: '#{{ item }}'
+    line: '{{ item }}'
+  with_items:
+    - 'ChallengeResponseAuthentication yes'
+    - 'UsePAM yes'
+    - 'PasswordAuthentication no'
+  when:
+    - vault_ssh_installed.changed or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+#BLOCK CERTS
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 7.0 check if the certificate exists in remote host /etc/vault-ssh-helper.d
+  stat:
+    path: "{{ ansible_local_parameters.centos8.centos8_vault_cert_hc_dev }}"
+  register: vault_certs_status
+  when:
+    - vault_ssh_installed.changed or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 7 .1 Copy certificate in remote path /etc/vault-ssh-helper.d
+  copy:
+    src: "{{ ansible_local_parameters.centos8.centos8_certificate_remote}}"
+    dest: "{{ ansible_local_parameters.centos8.centos8_ssh_helper }}"
+    mode: '0755'
+  when: 
+    - vault_certs_status.stat is defined and not vault_certs_status.stat.exists
+
+#RESTART SSHD
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 8.0 Restart the sshd service.
+  service:
+    name: sshd
+    state: restarted
+  when: 
+    - vault_ssh_installed.changed or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 8.1 Verify the configuration  Vault SSH Helper
+  command: /usr/local/bin/vault-ssh-helper -verify-only  -config "{{ ansible_local_parameters.centos8.centos8_create_configuration_file }}"
+  ignore_errors: true
+  when:
+    - vault_ssh_installed.changed or (verify_config_vault_ssh.msg is defined and verify_config_vault_ssh.msg.find('[Errno 2]') != -1)
+  register: verify_config_vault_ssh
+  
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 8.2 Print configuration status  Vault SSH Helper
+  debug:
+    msg: The configuration  Vault SSH Helper is Ok
+  when:
+    - vault_ssh_installed.changed and verify_config_vault_ssh is succeeded 
+#============================================================================#
+#                           Selinux configuration                            #
+#============================================================================#
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 9.0 Check if selinux is on remote host
+  command: getenforce
+  register: status_selinux
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 9.1 Selinux status
+  debug:
+    msg: Selinux is present on the remote host 
+  when:
+    - status_selinux is succeeded 
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 9.2 Copy module in remote host
+  copy:
+    src: "{{ansible_local_parameters.centos8.centos8_copy_pp }}"
+    dest: /tmp/
+    mode: '0755'
+  when: 
+    - vault_ssh_installed.changed
+    - status_selinux is defined and status_selinux.stdout == "Enforcing"
+    
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | 9.3 Install module whith Semodule
+  command: semodule -i "{{ ansible_local_parameters.centos8.centos8_module_pp }}"
+  when: 
+    - vault_ssh_installed.changed
+    - status_selinux is defined and status_selinux.stdout == "Enforcing"
+
+#============================================================================#
+#             Remove and uninstall packages of remote HOST                   #
+#============================================================================#
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rv.0 Check if Unzip deb package exists in temporary file
+  stat:
+    path: "{{ ansible_local_parameters.centos8.centos8_unzip_remote }}"
+  register: unzip_stat
+  when:
+  - not vault_ssh_already_installed.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rv.1 Delete Unzip deb package of temporary file
+  file:
+    path: "{{ ansible_local_parameters.centos8.centos8_unzip_remote }}"
+    state: absent
+  when: unzip_stat.stat is defined and unzip_stat.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rv.2 Check if Unzip is installed
+  stat:
+    path: "{{ ansible_local_parameters.centos8.centos8_unzip }}"
+  register: unzip_status
+  when:
+  - not vault_ssh_already_installed.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rv.3 Uninstall Unzip 
+  yum:
+    name:  unzip
+    state: absent
+  when:
+    -  unzip_status.stat is defined and unzip_status.stat.exists
+
+#remove vault ssh package
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rv.4 Check if Vault SSH Helper zip package exists in temporary file
+  stat:
+    path: "{{ ansible_local_parameters.centos8.centos8_unzip_host }}"
+  register: vault_ssh_stat
+  when:
+  - not vault_ssh_already_installed.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rv.5 Delete Vault SSH Helper zip package of temporary file
+  file:
+    path: "{{ ansible_local_parameters.centos8.centos8_unzip_host }}"
+    state: absent
+  when:  vault_ssh_stat.stat is defined and vault_ssh_stat.stat.exists
+#remove module
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rv.6 Check if module .pp exists in temporary file
+  stat:
+    path: "{{ ansible_local_parameters.centos8.centos8_module_pp }}"
+  register: vault_ssh_stat
+  when:
+  - not vault_ssh_already_installed.stat.exists
+
+- name: Vault SSH Helper | {{ansible_distribution}} {{ansible_distribution_major_version}} | Rv.7 Delete module .pp of temporary file
+  file:
+    path: "{{ ansible_local_parameters.centos8.centos8_module_pp }}"
+    state: absent
+  when:  vault_ssh_stat.stat is defined and vault_ssh_stat.stat.exists
+#===============================#
+#          ROLLBACK             #
+#===============================#
